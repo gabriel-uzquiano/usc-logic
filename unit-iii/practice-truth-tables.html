@@ -3,347 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unit III — Truth Table Practice · USC Logic Web</title>
+  <title>USC Logic Web &mdash; Unit III: Truth Tables</title>
   <link rel="stylesheet" href="../_shared/style.css">
-  <style>
-    /* ── iframe helpers ────────────────────────────────── */
-    .app-frame { position: relative; margin: 0.4rem 0 1.75rem; }
-    .app-frame iframe {
-      width: 100%; border: 1px solid var(--color-border);
-      border-radius: 6px; display: block;
-    }
-    .app-frame .open-btn {
-      position: absolute; top: 8px; right: 8px;
-      font-size: 0.72em; background: #fff;
-      padding: 2px 7px; border: 1px solid #ccc;
-      border-radius: 4px; z-index: 10;
-      text-decoration: none; color: #444;
-    }
-    /* ── exercise numbering ────────────────────────────── */
-    .exercise { margin: 1.1rem 0; }
-    .exercise-label {
-      font-family: var(--font-sans); font-size: 0.8rem;
-      color: var(--color-muted); margin-bottom: 0.3rem;
-    }
-    /* ── section instruction boxes ─────────────────────── */
-    .instructions {
-      border-left: 3px solid var(--color-teal);
-      background: #f4fafa;
-      padding: 0.7rem 1rem;
-      margin: 0.75rem 0 1.25rem;
-      font-size: 0.93rem;
-      line-height: 1.55;
-    }
-    .instructions.primary { border-color: var(--color-primary); background: #fdf5f7; }
-  </style>
 </head>
 <body>
-<div class="page">
 
   <header class="site-header">
-    <div class="course-label">University of Southern California · Philosophy</div>
-    <h1>Logic Web</h1>
+    <div class="course-label">University of Southern California &middot; Philosophy</div>
+    <h1>USC Logic Web</h1>
   </header>
 
   <nav class="breadcrumb">
     <a href="../index.html">Home</a>
-    <span>›</span>
+    <span>&rsaquo;</span>
     Unit III
-    <span>›</span>
+    <span>&rsaquo;</span>
     Truth Table Practice
   </nav>
 
-  <p>The following exercises cover the use of truth tables to check whether a formula of propositional logic is a tautology, whether two formulas are equivalent, and whether an argument is valid.</p>
+  <p>The following exercises cover the use of truth tables to check whether a formula is a tautology, whether two formulas are logically equivalent, and whether an argument is valid.</p>
 
-  <!-- ══════════════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════════
        SECTION 1 — Simple truth tables
-       ══════════════════════════════��═══════════════════════════ -->
+       ══════════════════════════════════════════════════════ -->
   <h2>1. Simple truth tables</h2>
 
   <div class="instructions">
-    Populate the truth table for each formula by clicking each <strong>?</strong> cell to cycle through T and F.
-    Sentence-letter columns are pre-filled. Click <em>Check</em> to verify your answers.
+    Populate the truth table for each formula. Sentence-letter columns are pre-filled.
+    Click each <strong>?</strong> cell to cycle through T and F, then click <em>Check</em> to verify your answers.
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">1.1</div>
+    <div class="exercise-label">1.1 &nbsp;&nbsp; &#x00AC;(p &and; q)</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table#v1:eyJidWlsZCI6IsKsKHAg4oinIHEpIn0=">
-        Open &#x2197;
-      </a>
-      <iframe title="1.1 ¬(p ∧ q)"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table&amp;v=2#v1:eyJidWlsZCI6IsKsKHAg4oinIHEpIn0="
-              height="200" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table#v1:eyJidWlsZCI6IsKsKHAg4oinIHEpIn0=">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table&amp;v=2#v1:eyJidWlsZCI6IsKsKHAg4oinIHEpIn0=" height="220" loading="lazy" allow="fullscreen" title="1.1"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">1.2</div>
+    <div class="exercise-label">1.2 &nbsp;&nbsp; &#x00AC;(p &rarr; q)</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table#v1:eyJidWlsZCI6IsKsKHAg4oaSIHEpIn0=">
-        Open &#x2197;
-      </a>
-      <iframe title="1.2 ¬(p → q)"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table&amp;v=2#v1:eyJidWlsZCI6IsKsKHAg4oaSIHEpIn0="
-              height="200" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table#v1:eyJidWlsZCI6IsKsKHAg4oaSIHEpIn0=">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table&amp;v=2#v1:eyJidWlsZCI6IsKsKHAg4oaSIHEpIn0=" height="220" loading="lazy" allow="fullscreen" title="1.2"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">1.3</div>
+    <div class="exercise-label">1.3 &nbsp;&nbsp; (p &and; (q &rarr; &#x00AC;r))</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table#v1:eyJidWlsZCI6IihwIOKIpyAocSDihpIgwqxyKSkifQ==">
-        Open &#x2197;
-      </a>
-      <iframe title="1.3 (p ∧ (q → ¬r))"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table&amp;v=2#v1:eyJidWlsZCI6IihwIOKIpyAocSDihpIgwqxyKSkifQ=="
-              height="250" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table#v1:eyJidWlsZCI6IihwIOKIpyAocSDihpIgwqxyKSkifQ==">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table&amp;v=2#v1:eyJidWlsZCI6IihwIOKIpyAocSDihpIgwqxyKSkifQ==" height="290" loading="lazy" allow="fullscreen" title="1.3"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">1.4</div>
+    <div class="exercise-label">1.4 &nbsp;&nbsp; (p &rarr; (q &or; r))</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table#v1:eyJidWlsZCI6IihwIOKGkiAocSDiiKggcikpIn0=">
-        Open &#x2197;
-      </a>
-      <iframe title="1.4 (p → (q ∨ r))"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table&amp;v=2#v1:eyJidWlsZCI6IihwIOKGkiAocSDiiKggcikpIn0="
-              height="250" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table#v1:eyJidWlsZCI6IihwIOKGkiAocSDiiKggcikpIn0=">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table&amp;v=2#v1:eyJidWlsZCI6IihwIOKGkiAocSDiiKggcikpIn0=" height="290" loading="lazy" allow="fullscreen" title="1.4"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">1.5</div>
+    <div class="exercise-label">1.5 &nbsp;&nbsp; (p &or; &#x00AC;(q &and; r))</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table#v1:eyJidWlsZCI6IihwIOKIqCDCrChxIOKIpyByKSkifQ==">
-        Open &#x2197;
-      </a>
-      <iframe title="1.5 (p ∨ ¬(q ∧ r))"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table&amp;v=2#v1:eyJidWlsZCI6IihwIOKIqCDCrChxIOKIpyByKSkifQ=="
-              height="250" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table#v1:eyJidWlsZCI6IihwIOKIqCDCrChxIOKIpyByKSkifQ==">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?card=table&amp;v=2#v1:eyJidWlsZCI6IihwIOKIqCDCrChxIOKIpyByKSkifQ==" height="290" loading="lazy" allow="fullscreen" title="1.5"></iframe>
     </div>
   </div>
 
-  <!-- ══════════════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════════
        SECTION 2 — Tautologies
-       ══════════════════════════════════════════════════════════ -->
+       ══════════════════════════════════════════════════════ -->
   <h2>2. Tautologies</h2>
 
   <div class="instructions">
     A formula is a <em>tautology</em> if and only if it is true under every assignment of truth values.
-    A <em>counterexample</em> is an assignment under which the formula is false.
-    Click <em>Evaluate</em> to check; counterexample rows will be highlighted in red if the formula is not a tautology.
+    Enter the formula in the <strong>Build</strong> card to construct the truth table. Then use the
+    <strong>Check</strong> card and click <em>Evaluate</em> to determine whether it is a tautology.
+    If it is not, a counterexample row will be highlighted.
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">2.1 &nbsp; ((p ∧ ¬q) → ¬(p → q))</div>
+    <div class="exercise-label">2.1 &nbsp;&nbsp; ((p &and; &#x00AC;q) &rarr; &#x00AC;(p &rarr; q))</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oinIMKscSkg4oaSIMKsKHAg4oaSIHEpKSJdfQ==">
-        Open &#x2197;
-      </a>
-      <iframe title="2.1 tautology check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oinIMKscSkg4oaSIMKsKHAg4oaSIHEpKSJdfQ=="
-              height="300" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oinIMKscSkg4oaSIMKsKHAg4oaSIHEpKSJdfQ==">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oinIMKscSkg4oaSIMKsKHAg4oaSIHEpKSJdfQ==" height="520" loading="lazy" allow="fullscreen" title="2.1"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">2.2 &nbsp; (p → (q → p))</div>
+    <div class="exercise-label">2.2 &nbsp;&nbsp; (p &rarr; (q &rarr; p))</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgKHEg4oaSIHApKSJdfQ==">
-        Open &#x2197;
-      </a>
-      <iframe title="2.2 tautology check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgKHEg4oaSIHApKSJdfQ=="
-              height="250" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgKHEg4oaSIHApKSJdfQ==">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgKHEg4oaSIHApKSJdfQ==" height="520" loading="lazy" allow="fullscreen" title="2.2"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">2.3 &nbsp; ((p ∨ q) → (p ∧ q))</div>
+    <div class="exercise-label">2.3 &nbsp;&nbsp; ((p &or; q) &rarr; (p &and; q))</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oioIHEpIOKGkiAocCDiiKcgcSkpIl19">
-        Open &#x2197;
-      </a>
-      <iframe title="2.3 tautology check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oioIHEpIOKGkiAocCDiiKcgcSkpIl19"
-              height="250" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oioIHEpIOKGkiAocCDiiKcgcSkpIl19">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oioIHEpIOKGkiAocCDiiKcgcSkpIl19" height="520" loading="lazy" allow="fullscreen" title="2.3"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">2.4 &nbsp; ((p → (q → r)) → ((p → q) → r))</div>
+    <div class="exercise-label">2.4 &nbsp;&nbsp; ((p &rarr; (q &rarr; r)) &rarr; ((p &rarr; q) &rarr; r))</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oaSIChxIOKGkiByKSkg4oaSICgocCDihpIgcSkg4oaSIHIpKSJdfQ==">
-        Open &#x2197;
-      </a>
-      <iframe title="2.4 tautology check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oaSIChxIOKGkiByKSkg4oaSICgocCDihpIgcSkg4oaSIHIpKSJdfQ=="
-              height="300" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oaSIChxIOKGkiByKSkg4oaSICgocCDihpIgcSkg4oaSIHIpKSJdfQ==">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=tautology&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oaSIChxIOKGkiByKSkg4oaSICgocCDihpIgcSkg4oaSIHIpKSJdfQ==" height="520" loading="lazy" allow="fullscreen" title="2.4"></iframe>
     </div>
   </div>
 
-  <!-- ══════════════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════════
        SECTION 3 — Equivalence
-       ══════════════════════════════════════════════════════════ -->
+       ══════════════════════════════════════════════════════ -->
   <h2>3. Logical equivalence</h2>
 
   <div class="instructions">
     Two formulas are <em>logically equivalent</em> if they have the same truth value on every row.
-    Click <em>Evaluate</em> to check; rows where the truth values differ will be highlighted.
+    Use the <strong>Check</strong> card and click <em>Evaluate</em> to compare the two formulas.
+    If they are not equivalent, the rows where their truth values differ will be highlighted.
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">3.1 &nbsp; ¬(p ∧ q) &nbsp; and &nbsp; (¬p ∨ q)</div>
+    <div class="exercise-label">3.1 &nbsp;&nbsp; &#x00AC;(p &and; q) &nbsp; and &nbsp; (&#x00AC;p &or; q)</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=equivalence#v1:eyJmb3JtdWxhcyI6WyLCrChwIOKIpyBxKSIsIijCrHAg4oioIHEpIl19">
-        Open &#x2197;
-      </a>
-      <iframe title="3.1 equivalence check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=equivalence&amp;v=2#v1:eyJmb3JtdWxhcyI6WyLCrChwIOKIpyBxKSIsIijCrHAg4oioIHEpIl19"
-              height="250" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=equivalence#v1:eyJmb3JtdWxhcyI6WyLCrChwIOKIpyBxKSIsIijCrHAg4oioIHEpIl19">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=equivalence&amp;v=2#v1:eyJmb3JtdWxhcyI6WyLCrChwIOKIpyBxKSIsIijCrHAg4oioIHEpIl19" height="520" loading="lazy" allow="fullscreen" title="3.1"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">3.2 &nbsp; (p ∧ ¬q) &nbsp; and &nbsp; ¬(p → q)</div>
+    <div class="exercise-label">3.2 &nbsp;&nbsp; (p &and; &#x00AC;q) &nbsp; and &nbsp; &#x00AC;(p &rarr; q)</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=equivalence#v1:eyJmb3JtdWxhcyI6WyIocCDiiKcgwqxxKSIsIsKsKHAg4oaSIHEpIl19">
-        Open &#x2197;
-      </a>
-      <iframe title="3.2 equivalence check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=equivalence&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDiiKcgwqxxKSIsIsKsKHAg4oaSIHEpIl19"
-              height="250" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=equivalence#v1:eyJmb3JtdWxhcyI6WyIocCDiiKcgwqxxKSIsIsKsKHAg4oaSIHEpIl19">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=equivalence&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDiiKcgwqxxKSIsIsKsKHAg4oaSIHEpIl19" height="520" loading="lazy" allow="fullscreen" title="3.2"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">3.3 &nbsp; (p → (q → r)) &nbsp; and &nbsp; ((p → q) → r)</div>
+    <div class="exercise-label">3.3 &nbsp;&nbsp; (p &rarr; (q &rarr; r)) &nbsp; and &nbsp; ((p &rarr; q) &rarr; r)</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=equivalence#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgKHEg4oaSIHIpKSIsIigocCDihpIgcSkg4oaSIHIpIl19">
-        Open &#x2197;
-      </a>
-      <iframe title="3.3 equivalence check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=equivalence&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgKHEg4oaSIHIpKSIsIigocCDihpIgcSkg4oaSIHIpIl19"
-              height="300" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=equivalence#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgKHEg4oaSIHIpKSIsIigocCDihpIgcSkg4oaSIHIpIl19">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=equivalence&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgKHEg4oaSIHIpKSIsIigocCDihpIgcSkg4oaSIHIpIl19" height="520" loading="lazy" allow="fullscreen" title="3.3"></iframe>
     </div>
   </div>
 
-  <!-- ══════════════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════════
        SECTION 4 — Validity
-       ══════════════════════════════════════════════════════════ -->
+       ══════════════════════════════════════════════════════ -->
   <h2>4. Validity</h2>
 
   <div class="instructions">
     An argument is <em>valid</em> if there is no assignment making all premises true and the conclusion false.
     Premises are listed first; the <strong>conclusion is the last formula</strong>.
-    Click <em>Evaluate</em> to check; counterexample rows (all premises true, conclusion false) will be highlighted.
+    Use the <strong>Check</strong> card and click <em>Evaluate</em>. If the argument is invalid,
+    a counterexample row will be highlighted.
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">4.1 &nbsp; (p → q), ¬p &nbsp; ∴ &nbsp; ¬q</div>
+    <div class="exercise-label">4.1 &nbsp;&nbsp; (p &rarr; q), &#x00AC;p &nbsp; &there4; &nbsp; &#x00AC;q</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCLCrHAiLCLCrHEiXX0=">
-        Open &#x2197;
-      </a>
-      <iframe title="4.1 validity check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCLCrHAiLCLCrHEiXX0="
-              height="250" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCLCrHAiLCLCrHEiXX0=">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCLCrHAiLCLCrHEiXX0=" height="520" loading="lazy" allow="fullscreen" title="4.1"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">4.2 &nbsp; (p → q), (p ∨ q) &nbsp; ∴ &nbsp; q</div>
+    <div class="exercise-label">4.2 &nbsp;&nbsp; (p &rarr; q), (p &or; q) &nbsp; &there4; &nbsp; q</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCIocCDiiKggcSkiLCJxIl19">
-        Open &#x2197;
-      </a>
-      <iframe title="4.2 validity check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCIocCDiiKggcSkiLCJxIl19"
-              height="250" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCIocCDiiKggcSkiLCJxIl19">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCIocCDiiKggcSkiLCJxIl19" height="520" loading="lazy" allow="fullscreen" title="4.2"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">4.3 &nbsp; (p → q), ¬(p ∧ q), ¬q &nbsp; ∴ &nbsp; (p → q)</div>
+    <div class="exercise-label">4.3 &nbsp;&nbsp; (p &rarr; q), &#x00AC;(p &and; q), &#x00AC;q &nbsp; &there4; &nbsp; (p &rarr; q)</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCLCrChwIOKIpyBxKSIsIsKscSIsIihwIOKGkiBxKSJdfQ==">
-        Open &#x2197;
-      </a>
-      <iframe title="4.3 validity check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCLCrChwIOKIpyBxKSIsIsKscSIsIihwIOKGkiBxKSJdfQ=="
-              height="300" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCLCrChwIOKIpyBxKSIsIsKscSIsIihwIOKGkiBxKSJdfQ==">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCLCrChwIOKIpyBxKSIsIsKscSIsIihwIOKGkiBxKSJdfQ==" height="520" loading="lazy" allow="fullscreen" title="4.3"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">4.4 &nbsp; (p → q), (q → r), ¬r &nbsp; ∴ &nbsp; (p → r)</div>
+    <div class="exercise-label">4.4 &nbsp;&nbsp; (p &rarr; q), (q &rarr; r), &#x00AC;r &nbsp; &there4; &nbsp; (p &rarr; r)</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCIocSDihpIgcikiLCLCrHIiLCIocCDihpIgcikiXX0=">
-        Open &#x2197;
-      </a>
-      <iframe title="4.4 validity check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCIocSDihpIgcikiLCLCrHIiLCIocCDihpIgcikiXX0="
-              height="300" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCIocSDihpIgcikiLCLCrHIiLCIocCDihpIgcikiXX0=">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgcSkiLCIocSDihpIgcikiLCLCrHIiLCIocCDihpIgcikiXX0=" height="520" loading="lazy" allow="fullscreen" title="4.4"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">4.5 &nbsp; ((p ∧ q) → r), (p ∧ ¬r) &nbsp; ∴ &nbsp; ¬q</div>
+    <div class="exercise-label">4.5 &nbsp;&nbsp; ((p &and; q) &rarr; r), (p &and; &#x00AC;r) &nbsp; &there4; &nbsp; &#x00AC;q</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oinIHEpIOKGkiByKSIsIihwIOKIpyDCrHIpIiwiwqxxIl19">
-        Open &#x2197;
-      </a>
-      <iframe title="4.5 validity check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oinIHEpIOKGkiByKSIsIihwIOKIpyDCrHIpIiwiwqxxIl19"
-              height="300" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oinIHEpIOKGkiByKSIsIihwIOKIpyDCrHIpIiwiwqxxIl19">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIoKHAg4oinIHEpIOKGkiByKSIsIihwIOKIpyDCrHIpIiwiwqxxIl19" height="520" loading="lazy" allow="fullscreen" title="4.5"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">4.6 &nbsp; (p → (q ∧ r)), (¬q ∨ ¬r) &nbsp; ∴ &nbsp; (p → ¬q)</div>
+    <div class="exercise-label">4.6 &nbsp;&nbsp; (p &rarr; (q &and; r)), (&#x00AC;q &or; &#x00AC;r) &nbsp; &there4; &nbsp; (p &rarr; &#x00AC;q)</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgKHEg4oinIHIpKSIsIijCrHEg4oioIMKscikiLCIocCDihpIgwqxxKSJdfQ==">
-        Open &#x2197;
-      </a>
-      <iframe title="4.6 validity check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgKHEg4oinIHIpKSIsIijCrHEg4oioIMKscikiLCIocCDihpIgwqxxKSJdfQ=="
-              height="300" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgKHEg4oinIHIpKSIsIijCrHEg4oioIMKscikiLCIocCDihpIgwqxxKSJdfQ==">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyIocCDihpIgKHEg4oinIHIpKSIsIijCrHEg4oioIMKscikiLCIocCDihpIgwqxxKSJdfQ==" height="520" loading="lazy" allow="fullscreen" title="4.6"></iframe>
     </div>
   </div>
 
   <div class="exercise">
-    <div class="exercise-label">4.7 &nbsp; p &nbsp; ∴ &nbsp; (q → ((p ∨ r) → (q ∧ r)))</div>
+    <div class="exercise-label">4.7 &nbsp;&nbsp; p &nbsp; &there4; &nbsp; (q &rarr; ((p &or; r) &rarr; (q &and; r)))</div>
     <div class="app-frame">
-      <a class="open-btn" target="_blank"
-         href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyJwIiwiKHEg4oaSICgocCDiiKggcikg4oaSIChxIOKIpyByKSkpIl19">
-        Open &#x2197;
-      </a>
-      <iframe title="4.7 validity check"
-              src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyJwIiwiKHEg4oaSICgocCDiiKggcikg4oaSIChxIOKIpyByKSkpIl19"
-              height="330" loading="lazy" allow="fullscreen"></iframe>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity#v1:eyJmb3JtdWxhcyI6WyJwIiwiKHEg4oaSICgocCDiiKggcikg4oaSIChxIOKIpyByKSkpIl19">Open &#x2197;</a>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-truth-table/?mode=validity&amp;v=2#v1:eyJmb3JtdWxhcyI6WyJwIiwiKHEg4oaSICgocCDiiKggcikg4oaSIChxIOKIpyByKSkpIl19" height="580" loading="lazy" allow="fullscreen" title="4.7"></iframe>
     </div>
   </div>
 
-</div><!-- .page -->
 </body>
 </html>
