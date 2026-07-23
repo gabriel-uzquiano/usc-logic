@@ -1,0 +1,155 @@
+/* ============================================================
+   USC Logic Web — shared course palette
+   Mirrors the textbook (et-book, maroon #7a1a3a, teal #006666)
+   ============================================================ */
+
+@font-face {
+  font-family: 'et-book';
+  src: url('https://gabriel-uzquiano.github.io/logic/fonts/et-book-roman-line-figures.woff') format('woff');
+  font-weight: normal; font-style: normal;
+}
+@font-face {
+  font-family: 'et-book';
+  src: url('https://gabriel-uzquiano.github.io/logic/fonts/et-book-bold-line-figures.woff') format('woff');
+  font-weight: bold; font-style: normal;
+}
+@font-face {
+  font-family: 'et-book';
+  src: url('https://gabriel-uzquiano.github.io/logic/fonts/et-book-roman-old-style-figures.woff') format('woff');
+  font-weight: normal; font-style: italic;
+}
+
+:root {
+  --font-body:    'et-book', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+  --font-sans:    'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  --font-mono:    'Consolas', 'Liberation Mono', Menlo, Courier, monospace;
+
+  --color-bg:      #f9f7f4;
+  --color-surface: #ffffff;
+  --color-text:    #111111;
+  --color-muted:   #555550;
+  --color-border:  #ddd8ce;
+
+  --color-primary: #7a1a3a;   /* maroon — matches textbook definition boxes */
+  --color-teal:    #006666;   /* teal   — matches textbook example boxes    */
+  --color-accent:  #b4d5fe;   /* selection blue from textbook               */
+
+  --max-width: 780px;
+  --gap: 2rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 18px; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ── Header ─────────────────────────────────────────────── */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+}
+.site-header .course-label {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+.site-header h1 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--color-primary);
+  margin-top: 0.2rem;
+}
+
+/* ── Nav breadcrumb ──���───────────────────────────────────── */
+.breadcrumb {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  margin-bottom: 2rem;
+}
+.breadcrumb a { color: var(--color-teal); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb span { margin: 0 0.4em; }
+
+/* ── Typography ──────────────────────────────────────────── */
+h2 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--color-primary);
+  border-left: 3px solid var(--color-primary);
+  padding-left: 0.75rem;
+  margin: 2.5rem 0 0.75rem;
+}
+h3 {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: normal;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+  margin: 1.75rem 0 0.5rem;
+}
+p { margin-bottom: 1rem; }
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+/* ── Definition / example boxes (mirrors textbook) ───────── */
+.box {
+  border-left: 3px solid var(--color-teal);
+  background: #f4fafa;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.95rem;
+}
+.box.definition { border-color: var(--color-primary); background: #fdf5f7; }
+
+/* ── Exercise blocks ─────────────────────────────────────── */
+.exercise {
+  margin: 1.25rem 0;
+}
+.exercise-label {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-bottom: 0.35rem;
+}
+
+/* ── Iframe wrapper ──────────────────────────────────────── */
+.app-frame {
+  position: relative;
+  margin: 0.25rem 0 1.5rem;
+}
+.app-frame iframe {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  display: block;
+}
+.app-frame .open-btn {
+  position: absolute;
+  top: 8px; right: 8px;
+  font-size: 0.72em;
+  background: #fff;
+  padding: 2px 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 10;
+  text-decoration: none;
+  color: #444;
+}
