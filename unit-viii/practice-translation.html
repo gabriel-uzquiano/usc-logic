@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USC Logic Web &mdash; Unit VIII: Translation</title>
+  <link rel="stylesheet" href="../shared/style.css">
+  <style>
+    .exercise-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.4rem;
+    }
+    .exercise-num {
+      font-family: var(--font-sans);
+      font-size: 0.83rem;
+      color: var(--color-muted);
+    }
+    .open-btn {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      color: var(--color-teal);
+      text-decoration: none;
+    }
+    .open-btn:hover { text-decoration: underline; }
+    .app-frame iframe {
+      width: 100%;
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      display: block;
+      background: #fff;
+    }
+    .exercise { margin: 0 0 2rem; }
+    .key-box {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      border-left: 3px solid var(--color-primary);
+      padding: 0.55rem 0.9rem;
+      margin: 0.25rem 0 1.5rem;
+      background: color-mix(in srgb, var(--color-primary) 5%, var(--color-bg));
+    }
+    .key-box strong {
+      display: block;
+      color: var(--color-primary);
+      margin-bottom: 0.35rem;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .key-box table { border-collapse: collapse; }
+    .key-box td { padding: 0.1rem 1.2rem 0.1rem 0; vertical-align: top; }
+    .key-box td:first-child { color: var(--color-muted); min-width: 5rem; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="course-label">University of Southern California &middot; Philosophy</div>
+    <h1>USC Logic Web</h1>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>&rsaquo;</span>
+    Unit VIII
+    <span>&rsaquo;</span>
+    Translation
+  </nav>
+
+  <p>Translate each English sentence into the language of quantificational logic using the key provided.
+  You may use your own choice of letters in the worksheet — the app checks your answer against
+  the reference regardless of which letters you pick.</p>
+
+
+  <h2>Greeks and Trojans</h2>
+  <div class="key-box">
+    <strong>Translation key</strong>
+    <table>
+      <tr><td>Domain</td><td>people</td></tr>
+      <tr><td><i>P</i>(_)</td><td>_ is Greek</td></tr>
+      <tr><td><i>Q</i>(_)</td><td>_ is Trojan</td></tr>
+      <tr><td><i>R</i>(_,_)</td><td>_ fears _</td></tr>
+      <tr><td><i>a</i></td><td>Achilles</td></tr>
+      <tr><td><i>b</i></td><td>Hector</td></tr>
+      <tr><td><i>c</i></td><td>Paris</td></tr>
+    </table>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.1</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJBY2hpbGxlcyBpcyBHcmVlayBidXQgbmVpdGhlciBIZWN0b3Igbm9yIFBhcmlzIGFyZSBHcmVlayIsInJlZkZvcm11bGEiOiJQYSDiiKcgKMKsUGIg4oinIMKsUGMpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJBY2hpbGxlcyBpcyBHcmVlayBidXQgbmVpdGhlciBIZWN0b3Igbm9yIFBhcmlzIGFyZSBHcmVlayIsInJlZkZvcm11bGEiOiJQYSDiiKcgKMKsUGIg4oinIMKsUGMpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.2</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJCb3RoIEhlY3RvciBhbmQgUGFyaXMgYXJlIFRyb2phbiwgYnV0IEFjaGlsbGVzIGlzIEdyZWVrIiwicmVmRm9ybXVsYSI6IihRYiDiiKcgUWMpIOKIpyBQYSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJCb3RoIEhlY3RvciBhbmQgUGFyaXMgYXJlIFRyb2phbiwgYnV0IEFjaGlsbGVzIGlzIEdyZWVrIiwicmVmRm9ybXVsYSI6IihRYiDiiKcgUWMpIOKIpyBQYSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.3</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJBY2hpbGxlcyBhbmQgSGVjdG9yIGRvIG5vdCBmZWFyIGVhY2ggb3RoZXIiLCJyZWZGb3JtdWxhIjoiwqxSYWIg4oinIMKsUmJhIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJBY2hpbGxlcyBhbmQgSGVjdG9yIGRvIG5vdCBmZWFyIGVhY2ggb3RoZXIiLCJyZWZGb3JtdWxhIjoiwqxSYWIg4oinIMKsUmJhIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.4</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJTb21lIEdyZWVrcyBhcmUgbm90IFRyb2phbiIsInJlZkZvcm11bGEiOiLiiIN4KFB4IOKIpyDCrFF4KSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJTb21lIEdyZWVrcyBhcmUgbm90IFRyb2phbiIsInJlZkZvcm11bGEiOiLiiIN4KFB4IOKIpyDCrFF4KSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.5</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJFdmVyeSBHcmVlayBmZWFycyBIZWN0b3IiLCJyZWZGb3JtdWxhIjoi4oiAeChQeCDihpIgUnhiKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJFdmVyeSBHcmVlayBmZWFycyBIZWN0b3IiLCJyZWZGb3JtdWxhIjoi4oiAeChQeCDihpIgUnhiKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.6</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJTb21lIEdyZWVrcyBmZWFyIG5vIG9uZSIsInJlZkZvcm11bGEiOiLiiIN4KFB4IOKIpyDCrOKIg3lSeHkpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJTb21lIEdyZWVrcyBmZWFyIG5vIG9uZSIsInJlZkZvcm11bGEiOiLiiIN4KFB4IOKIpyDCrOKIg3lSeHkpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.7</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJTb21lIEdyZWVrcyBmZWFyIGV2ZXJ5IFRyb2phbiIsInJlZkZvcm11bGEiOiLiiIN4KFB4IOKIpyDiiIB5KFF5IOKGkiBSeHkpKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJTb21lIEdyZWVrcyBmZWFyIGV2ZXJ5IFRyb2phbiIsInJlZkZvcm11bGEiOiLiiIN4KFB4IOKIpyDiiIB5KFF5IOKGkiBSeHkpKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.8</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJBY2hpbGxlcyBpcyBHcmVlaywgYnV0IGhlIGZlYXJzIG5vIFRyb2phbiIsInJlZkZvcm11bGEiOiJQYSDiiKcgwqziiIN4KFF4IOKIpyBSYXgpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJBY2hpbGxlcyBpcyBHcmVlaywgYnV0IGhlIGZlYXJzIG5vIFRyb2phbiIsInJlZkZvcm11bGEiOiJQYSDiiKcgwqziiIN4KFF4IOKIpyBSYXgpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.9</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJOZWl0aGVyIFBhcmlzIG5vciBIZWN0b3IgZmVhciBhbnkgR3JlZWsiLCJyZWZGb3JtdWxhIjoiwqziiIN4KFB4IOKIpyBSYngpIOKIpyDCrOKIg3goUHgg4oinIFJjeCkiLCJyZWZQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiJQIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgR3JlZWsifSx7ImxldHRlciI6IlEiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBUcm9qYW4ifSx7ImxldHRlciI6IlIiLCJhcml0eSI6MiwiY2xhdXNlIjoiXyBmZWFycyBfIn1dLCJyZWZDb25zdGFudHMiOlt7ImxldHRlciI6ImEiLCJuYW1lIjoiQWNoaWxsZXMifSx7ImxldHRlciI6ImIiLCJuYW1lIjoiSGVjdG9yIn0seyJsZXR0ZXIiOiJjIiwibmFtZSI6IlBhcmlzIn1dfV0sIndzUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiIiwiYXJpdHkiOjEsImNsYXVzZSI6IiJ9XSwid3NDb25zdGFudHMiOlt7ImxldHRlciI6IiIsIm5hbWUiOiIifV0sInRyYW5zIjpbeyJmb3JtdWxhIjoiIiwicmV2ZWFsZWQiOmZhbHNlfV19">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJOZWl0aGVyIFBhcmlzIG5vciBIZWN0b3IgZmVhciBhbnkgR3JlZWsiLCJyZWZGb3JtdWxhIjoiwqziiIN4KFB4IOKIpyBSYngpIOKIpyDCrOKIg3goUHgg4oinIFJjeCkiLCJyZWZQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiJQIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgR3JlZWsifSx7ImxldHRlciI6IlEiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBUcm9qYW4ifSx7ImxldHRlciI6IlIiLCJhcml0eSI6MiwiY2xhdXNlIjoiXyBmZWFycyBfIn1dLCJyZWZDb25zdGFudHMiOlt7ImxldHRlciI6ImEiLCJuYW1lIjoiQWNoaWxsZXMifSx7ImxldHRlciI6ImIiLCJuYW1lIjoiSGVjdG9yIn0seyJsZXR0ZXIiOiJjIiwibmFtZSI6IlBhcmlzIn1dfV0sIndzUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiIiwiYXJpdHkiOjEsImNsYXVzZSI6IiJ9XSwid3NDb25zdGFudHMiOlt7ImxldHRlciI6IiIsIm5hbWUiOiIifV0sInRyYW5zIjpbeyJmb3JtdWxhIjoiIiwicmV2ZWFsZWQiOmZhbHNlfV19" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.10</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJIZWN0b3IgZmVhcnMgYW55b25lIFBhcmlzIGZlYXJzIiwicmVmRm9ybXVsYSI6IuKIgHgoUmN4IOKGkiBSYngpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJIZWN0b3IgZmVhcnMgYW55b25lIFBhcmlzIGZlYXJzIiwicmVmRm9ybXVsYSI6IuKIgHgoUmN4IOKGkiBSYngpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <h2>Days of the Week</h2>
+  <div class="key-box">
+    <strong>Translation key</strong>
+    <table>
+      <tr><td>Domain</td><td>days</td></tr>
+      <tr><td><i>P</i>(_)</td><td>_ is a weekday</td></tr>
+      <tr><td><i>Q</i>(_)</td><td>_ is a weekend day</td></tr>
+      <tr><td><i>R</i>(_,_)</td><td>_ comes before _</td></tr>
+      <tr><td><i>a</i></td><td>Monday</td></tr>
+      <tr><td><i>b</i></td><td>Friday</td></tr>
+      <tr><td><i>c</i></td><td>Sunday</td></tr>
+    </table>
+  </div>
+
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.1</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJNb25kYXkgY29tZXMgYmVmb3JlIEZyaWRheSwgd2hpY2ggY29tZXMgYmVmb3JlIFN1bmRheSBidXQgbm90IE1vbmRheSIsInJlZkZvcm11bGEiOiJSYWIg4oinIChSYmMg4oinIMKsUmJhKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBhIHdlZWtkYXkifSx7ImxldHRlciI6IlEiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBhIHdlZWtlbmQgZGF5In0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gY29tZXMgYmVmb3JlIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJNb25kYXkifSx7ImxldHRlciI6ImIiLCJuYW1lIjoiRnJpZGF5In0seyJsZXR0ZXIiOiJjIiwibmFtZSI6IlN1bmRheSJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJNb25kYXkgY29tZXMgYmVmb3JlIEZyaWRheSwgd2hpY2ggY29tZXMgYmVmb3JlIFN1bmRheSBidXQgbm90IE1vbmRheSIsInJlZkZvcm11bGEiOiJSYWIg4oinIChSYmMg4oinIMKsUmJhKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBhIHdlZWtkYXkifSx7ImxldHRlciI6IlEiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBhIHdlZWtlbmQgZGF5In0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gY29tZXMgYmVmb3JlIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJNb25kYXkifSx7ImxldHRlciI6ImIiLCJuYW1lIjoiRnJpZGF5In0seyJsZXR0ZXIiOiJjIiwibmFtZSI6IlN1bmRheSJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.2</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJPbmx5IHdlZWtkYXlzIGNvbWUgYmVmb3JlIEZyaWRheSIsInJlZkZvcm11bGEiOiLiiIB4KFJ4YiDihpIgUHgpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2RheSJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2VuZCBkYXkifSx7ImxldHRlciI6IlIiLCJhcml0eSI6MiwiY2xhdXNlIjoiXyBjb21lcyBiZWZvcmUgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6Ik1vbmRheSJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJGcmlkYXkifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiU3VuZGF5In1dfV0sIndzUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiIiwiYXJpdHkiOjEsImNsYXVzZSI6IiJ9XSwid3NDb25zdGFudHMiOlt7ImxldHRlciI6IiIsIm5hbWUiOiIifV0sInRyYW5zIjpbeyJmb3JtdWxhIjoiIiwicmV2ZWFsZWQiOmZhbHNlfV19">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJPbmx5IHdlZWtkYXlzIGNvbWUgYmVmb3JlIEZyaWRheSIsInJlZkZvcm11bGEiOiLiiIB4KFJ4YiDihpIgUHgpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2RheSJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2VuZCBkYXkifSx7ImxldHRlciI6IlIiLCJhcml0eSI6MiwiY2xhdXNlIjoiXyBjb21lcyBiZWZvcmUgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6Ik1vbmRheSJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJGcmlkYXkifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiU3VuZGF5In1dfV0sIndzUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiIiwiYXJpdHkiOjEsImNsYXVzZSI6IiJ9XSwid3NDb25zdGFudHMiOlt7ImxldHRlciI6IiIsIm5hbWUiOiIifV0sInRyYW5zIjpbeyJmb3JtdWxhIjoiIiwicmV2ZWFsZWQiOmZhbHNlfV19" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.3</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJObyB3ZWVrZW5kIGRheSBpcyBhIHdlZWtkYXkiLCJyZWZGb3JtdWxhIjoi4oiAeChQeCDihpIgwqxReCkiLCJyZWZQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiJQIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgYSB3ZWVrZGF5In0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgYSB3ZWVrZW5kIGRheSJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGNvbWVzIGJlZm9yZSBfIn1dLCJyZWZDb25zdGFudHMiOlt7ImxldHRlciI6ImEiLCJuYW1lIjoiTW9uZGF5In0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkZyaWRheSJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJTdW5kYXkifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJObyB3ZWVrZW5kIGRheSBpcyBhIHdlZWtkYXkiLCJyZWZGb3JtdWxhIjoi4oiAeChQeCDihpIgwqxReCkiLCJyZWZQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiJQIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgYSB3ZWVrZGF5In0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgYSB3ZWVrZW5kIGRheSJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGNvbWVzIGJlZm9yZSBfIn1dLCJyZWZDb25zdGFudHMiOlt7ImxldHRlciI6ImEiLCJuYW1lIjoiTW9uZGF5In0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkZyaWRheSJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJTdW5kYXkifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.4</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJFdmVyeSB3ZWVrZGF5IGNvbWVzIGJlZm9yZSBhIHdlZWtlbmQgZGF5IiwicmVmRm9ybXVsYSI6IuKIgHgoUHgg4oaSIOKIg3koUXkg4oinIFJ4eSkpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2RheSJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2VuZCBkYXkifSx7ImxldHRlciI6IlIiLCJhcml0eSI6MiwiY2xhdXNlIjoiXyBjb21lcyBiZWZvcmUgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6Ik1vbmRheSJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJGcmlkYXkifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiU3VuZGF5In1dfV0sIndzUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiIiwiYXJpdHkiOjEsImNsYXVzZSI6IiJ9XSwid3NDb25zdGFudHMiOlt7ImxldHRlciI6IiIsIm5hbWUiOiIifV0sInRyYW5zIjpbeyJmb3JtdWxhIjoiIiwicmV2ZWFsZWQiOmZhbHNlfV19">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJFdmVyeSB3ZWVrZGF5IGNvbWVzIGJlZm9yZSBhIHdlZWtlbmQgZGF5IiwicmVmRm9ybXVsYSI6IuKIgHgoUHgg4oaSIOKIg3koUXkg4oinIFJ4eSkpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2RheSJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2VuZCBkYXkifSx7ImxldHRlciI6IlIiLCJhcml0eSI6MiwiY2xhdXNlIjoiXyBjb21lcyBiZWZvcmUgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6Ik1vbmRheSJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJGcmlkYXkifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiU3VuZGF5In1dfV0sIndzUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiIiwiYXJpdHkiOjEsImNsYXVzZSI6IiJ9XSwid3NDb25zdGFudHMiOlt7ImxldHRlciI6IiIsIm5hbWUiOiIifV0sInRyYW5zIjpbeyJmb3JtdWxhIjoiIiwicmV2ZWFsZWQiOmZhbHNlfV19" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.5</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJJZiBhIGRheSBjb21lcyBiZWZvcmUgRnJpZGF5LCB0aGVuIGl0IGNvbWVzIGJlZm9yZSBTdW5kYXkiLCJyZWZGb3JtdWxhIjoi4oiAeChSeGIg4oaSIFJ4YykiLCJyZWZQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiJQIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgYSB3ZWVrZGF5In0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgYSB3ZWVrZW5kIGRheSJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGNvbWVzIGJlZm9yZSBfIn1dLCJyZWZDb25zdGFudHMiOlt7ImxldHRlciI6ImEiLCJuYW1lIjoiTW9uZGF5In0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkZyaWRheSJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJTdW5kYXkifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJJZiBhIGRheSBjb21lcyBiZWZvcmUgRnJpZGF5LCB0aGVuIGl0IGNvbWVzIGJlZm9yZSBTdW5kYXkiLCJyZWZGb3JtdWxhIjoi4oiAeChSeGIg4oaSIFJ4YykiLCJyZWZQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiJQIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgYSB3ZWVrZGF5In0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgYSB3ZWVrZW5kIGRheSJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGNvbWVzIGJlZm9yZSBfIn1dLCJyZWZDb25zdGFudHMiOlt7ImxldHRlciI6ImEiLCJuYW1lIjoiTW9uZGF5In0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkZyaWRheSJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJTdW5kYXkifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.6</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJJZiBhbnkgd2Vla2RheSBjb21lcyBiZWZvcmUgTW9uZGF5LCB0aGVuIGV2ZXJ5IHdlZWtlbmQgZGF5IGNvbWVzIGJlZm9yZSBGcmlkYXkiLCJyZWZGb3JtdWxhIjoi4oiDeChQeCDiiKcgUnhhKSDihpIg4oiAeChReCDihpIgUnhiKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBhIHdlZWtkYXkifSx7ImxldHRlciI6IlEiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBhIHdlZWtlbmQgZGF5In0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gY29tZXMgYmVmb3JlIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJNb25kYXkifSx7ImxldHRlciI6ImIiLCJuYW1lIjoiRnJpZGF5In0seyJsZXR0ZXIiOiJjIiwibmFtZSI6IlN1bmRheSJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJJZiBhbnkgd2Vla2RheSBjb21lcyBiZWZvcmUgTW9uZGF5LCB0aGVuIGV2ZXJ5IHdlZWtlbmQgZGF5IGNvbWVzIGJlZm9yZSBGcmlkYXkiLCJyZWZGb3JtdWxhIjoi4oiDeChQeCDiiKcgUnhhKSDihpIg4oiAeChReCDihpIgUnhiKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBhIHdlZWtkYXkifSx7ImxldHRlciI6IlEiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBhIHdlZWtlbmQgZGF5In0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gY29tZXMgYmVmb3JlIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJNb25kYXkifSx7ImxldHRlciI6ImIiLCJuYW1lIjoiRnJpZGF5In0seyJsZXR0ZXIiOiJjIiwibmFtZSI6IlN1bmRheSJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.7</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJObyB3ZWVrZW5kIGRheSBjb21lcyBiZWZvcmUgYSB3ZWVrZGF5IiwicmVmRm9ybXVsYSI6IuKIgHgoUXgg4oaSIOKIgHkoUHkg4oaSIMKsUnh5KSkiLCJyZWZQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiJQIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgYSB3ZWVrZGF5In0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgYSB3ZWVrZW5kIGRheSJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGNvbWVzIGJlZm9yZSBfIn1dLCJyZWZDb25zdGFudHMiOlt7ImxldHRlciI6ImEiLCJuYW1lIjoiTW9uZGF5In0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkZyaWRheSJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJTdW5kYXkifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJObyB3ZWVrZW5kIGRheSBjb21lcyBiZWZvcmUgYSB3ZWVrZGF5IiwicmVmRm9ybXVsYSI6IuKIgHgoUXgg4oaSIOKIgHkoUHkg4oaSIMKsUnh5KSkiLCJyZWZQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiJQIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgYSB3ZWVrZGF5In0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgYSB3ZWVrZW5kIGRheSJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGNvbWVzIGJlZm9yZSBfIn1dLCJyZWZDb25zdGFudHMiOlt7ImxldHRlciI6ImEiLCJuYW1lIjoiTW9uZGF5In0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkZyaWRheSJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJTdW5kYXkifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.8</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJGcmlkYXkgY29tZXMgYmVmb3JlIGV2ZXJ5IHdlZWtlbmQgZGF5IGNvbWluZyBiZWZvcmUgTW9uZGF5IiwicmVmRm9ybXVsYSI6IuKIgHgoKFF4IOKIpyBSeGEpIOKGkiBSYngpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2RheSJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2VuZCBkYXkifSx7ImxldHRlciI6IlIiLCJhcml0eSI6MiwiY2xhdXNlIjoiXyBjb21lcyBiZWZvcmUgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6Ik1vbmRheSJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJGcmlkYXkifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiU3VuZGF5In1dfV0sIndzUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiIiwiYXJpdHkiOjEsImNsYXVzZSI6IiJ9XSwid3NDb25zdGFudHMiOlt7ImxldHRlciI6IiIsIm5hbWUiOiIifV0sInRyYW5zIjpbeyJmb3JtdWxhIjoiIiwicmV2ZWFsZWQiOmZhbHNlfV19">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJGcmlkYXkgY29tZXMgYmVmb3JlIGV2ZXJ5IHdlZWtlbmQgZGF5IGNvbWluZyBiZWZvcmUgTW9uZGF5IiwicmVmRm9ybXVsYSI6IuKIgHgoKFF4IOKIpyBSeGEpIOKGkiBSYngpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2RheSJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2VuZCBkYXkifSx7ImxldHRlciI6IlIiLCJhcml0eSI6MiwiY2xhdXNlIjoiXyBjb21lcyBiZWZvcmUgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6Ik1vbmRheSJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJGcmlkYXkifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiU3VuZGF5In1dfV0sIndzUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiIiwiYXJpdHkiOjEsImNsYXVzZSI6IiJ9XSwid3NDb25zdGFudHMiOlt7ImxldHRlciI6IiIsIm5hbWUiOiIifV0sInRyYW5zIjpbeyJmb3JtdWxhIjoiIiwicmV2ZWFsZWQiOmZhbHNlfV19" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.9</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJTb21lIHdlZWtlbmQgZGF5IGNvbWVzIGJlZm9yZSBldmVyeSB3ZWVrZGF5IiwicmVmRm9ybXVsYSI6IuKIg3goUXgg4oinIOKIgHkoUHkg4oaSIFJ4eSkpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2RheSJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2VuZCBkYXkifSx7ImxldHRlciI6IlIiLCJhcml0eSI6MiwiY2xhdXNlIjoiXyBjb21lcyBiZWZvcmUgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6Ik1vbmRheSJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJGcmlkYXkifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiU3VuZGF5In1dfV0sIndzUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiIiwiYXJpdHkiOjEsImNsYXVzZSI6IiJ9XSwid3NDb25zdGFudHMiOlt7ImxldHRlciI6IiIsIm5hbWUiOiIifV0sInRyYW5zIjpbeyJmb3JtdWxhIjoiIiwicmV2ZWFsZWQiOmZhbHNlfV19">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJTb21lIHdlZWtlbmQgZGF5IGNvbWVzIGJlZm9yZSBldmVyeSB3ZWVrZGF5IiwicmVmRm9ybXVsYSI6IuKIg3goUXgg4oinIOKIgHkoUHkg4oaSIFJ4eSkpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2RheSJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIGEgd2Vla2VuZCBkYXkifSx7ImxldHRlciI6IlIiLCJhcml0eSI6MiwiY2xhdXNlIjoiXyBjb21lcyBiZWZvcmUgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6Ik1vbmRheSJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJGcmlkYXkifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiU3VuZGF5In1dfV0sIndzUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiIiwiYXJpdHkiOjEsImNsYXVzZSI6IiJ9XSwid3NDb25zdGFudHMiOlt7ImxldHRlciI6IiIsIm5hbWUiOiIifV0sInRyYW5zIjpbeyJmb3JtdWxhIjoiIiwicmV2ZWFsZWQiOmZhbHNlfV19" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.10</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJFdmVyeSB3ZWVrZGF5IGNvbWVzIGJlZm9yZSBldmVyeSB3ZWVrZW5kIGRheSIsInJlZkZvcm11bGEiOiLiiIB4KFB4IOKGkiDiiIB5KFF5IOKGkiBSeHkpKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBhIHdlZWtkYXkifSx7ImxldHRlciI6IlEiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBhIHdlZWtlbmQgZGF5In0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gY29tZXMgYmVmb3JlIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJNb25kYXkifSx7ImxldHRlciI6ImIiLCJuYW1lIjoiRnJpZGF5In0seyJsZXR0ZXIiOiJjIiwibmFtZSI6IlN1bmRheSJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJFdmVyeSB3ZWVrZGF5IGNvbWVzIGJlZm9yZSBldmVyeSB3ZWVrZW5kIGRheSIsInJlZkZvcm11bGEiOiLiiIB4KFB4IOKGkiDiiIB5KFF5IOKGkiBSeHkpKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBhIHdlZWtkYXkifSx7ImxldHRlciI6IlEiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBhIHdlZWtlbmQgZGF5In0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gY29tZXMgYmVmb3JlIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJNb25kYXkifSx7ImxldHRlciI6ImIiLCJuYW1lIjoiRnJpZGF5In0seyJsZXR0ZXIiOiJjIiwibmFtZSI6IlN1bmRheSJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==" height="420" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+</body>
+</html>
