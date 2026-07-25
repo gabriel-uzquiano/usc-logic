@@ -6,15 +6,12 @@
   <title>USC Logic Web &mdash; Unit VI: Syntax</title>
   <link rel="stylesheet" href="../shared/style.css">
   <style>
-    .exercise-header {
-      display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.4rem;
-    }
+    .exercise-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.4rem; }
     .exercise-num { font-family: var(--font-sans); font-size: 0.83rem; color: var(--color-muted); }
     .open-btn { font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-teal); text-decoration: none; }
     .open-btn:hover { text-decoration: underline; }
     .app-frame iframe { width: 100%; border: 1px solid var(--color-border); border-radius: 4px; display: block; background: #fff; }
     .exercise { margin: 0 0 2.25rem; }
-
     .mc-exercise { margin: 0 0 2rem; }
     .mc-question { margin-bottom: 0.6rem; font-style: italic; }
     .mc-options { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.7rem; }
@@ -28,10 +25,8 @@
     }
     .btn-check:hover { background: var(--color-teal); color: #fff; border-color: var(--color-teal); }
     .mc-feedback { font-family: var(--font-sans); font-size: 0.85rem; margin-bottom: 0.4rem; }
-    .fb-ok { color: #1a6e2e; }
-    .fb-err { color: #8b1a1a; }
+    .fb-ok { color: #1a6e2e; } .fb-err { color: #8b1a1a; }
     .mc-answer { font-family: var(--font-sans); font-size: 0.85rem; color: var(--color-muted); margin-top: 0.3rem; }
-
   </style>
 </head>
 <body>
@@ -52,19 +47,11 @@
   <p>Is each expression part of the official vocabulary of quantificational logic?</p>
 
   <div class="exercise mc-exercise" data-correct='[1]' data-name="q1_1">
-    <div class="exercise-header">
-      <span class="exercise-num">1.1</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">1.1</span></div>
     <div class="mc-question">&alpha; (alpha)</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="radio" name="q1_1_0" value="0">
-        <span>Yes</span>
-      </label>
-      <label class="mc-option">
-        <input type="radio" name="q1_1_1" value="1">
-        <span>No</span>
-      </label>
+      <label class="mc-option"><input type="radio" name="q1_1_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q1_1_1" value="1"><span>No</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -74,19 +61,11 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[0]' data-name="q1_2">
-    <div class="exercise-header">
-      <span class="exercise-num">1.2</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">1.2</span></div>
     <div class="mc-question"><i>P</i></div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="radio" name="q1_2_0" value="0">
-        <span>Yes</span>
-      </label>
-      <label class="mc-option">
-        <input type="radio" name="q1_2_1" value="1">
-        <span>No</span>
-      </label>
+      <label class="mc-option"><input type="radio" name="q1_2_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q1_2_1" value="1"><span>No</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -96,19 +75,11 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> Yes</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[0]' data-name="q1_3">
-    <div class="exercise-header">
-      <span class="exercise-num">1.3</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">1.3</span></div>
     <div class="mc-question"><i>a</i></div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="radio" name="q1_3_0" value="0">
-        <span>Yes</span>
-      </label>
-      <label class="mc-option">
-        <input type="radio" name="q1_3_1" value="1">
-        <span>No</span>
-      </label>
+      <label class="mc-option"><input type="radio" name="q1_3_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q1_3_1" value="1"><span>No</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -121,23 +92,12 @@
   <p>Which of the following are <em>atomic</em> formulas? Which are <em>formulas</em>? Which are <em>neither</em>?</p>
 
   <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_a">
-    <div class="exercise-header">
-      <span class="exercise-num">2.a</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">2.a</span></div>
     <div class="mc-question">(&forall;<i>x</i> <i>Px</i> &or; &exist;<i>x</i> <i>Qx</i>)</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q2_a_0" value="0">
-        <span>atomic formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_a_1" value="1">
-        <span>formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_a_2" value="2">
-        <span>neither</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q2_a_0" value="0"><span>atomic formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_a_1" value="1"><span>formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_a_2" value="2"><span>neither</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -147,23 +107,12 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> formula</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[0, 1]' data-name="q2_b">
-    <div class="exercise-header">
-      <span class="exercise-num">2.b</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">2.b</span></div>
     <div class="mc-question"><i>Qb</i></div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q2_b_0" value="0">
-        <span>atomic formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_b_1" value="1">
-        <span>formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_b_2" value="2">
-        <span>neither</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q2_b_0" value="0"><span>atomic formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_b_1" value="1"><span>formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_b_2" value="2"><span>neither</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -173,23 +122,12 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> atomic formula; formula</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[2]' data-name="q2_c">
-    <div class="exercise-header">
-      <span class="exercise-num">2.c</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">2.c</span></div>
     <div class="mc-question"><i>P</i>(&not;)</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q2_c_0" value="0">
-        <span>atomic formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_c_1" value="1">
-        <span>formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_c_2" value="2">
-        <span>neither</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q2_c_0" value="0"><span>atomic formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_c_1" value="1"><span>formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_c_2" value="2"><span>neither</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -199,23 +137,12 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> neither</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_d">
-    <div class="exercise-header">
-      <span class="exercise-num">2.d</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">2.d</span></div>
     <div class="mc-question">&not;<i>Pa</i></div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q2_d_0" value="0">
-        <span>atomic formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_d_1" value="1">
-        <span>formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_d_2" value="2">
-        <span>neither</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q2_d_0" value="0"><span>atomic formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_d_1" value="1"><span>formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_d_2" value="2"><span>neither</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -225,23 +152,12 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> formula</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_e">
-    <div class="exercise-header">
-      <span class="exercise-num">2.e</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">2.e</span></div>
     <div class="mc-question">&exist;<i>y</i> &forall;<i>x</i> <i>Rxya</i></div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q2_e_0" value="0">
-        <span>atomic formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_e_1" value="1">
-        <span>formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_e_2" value="2">
-        <span>neither</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q2_e_0" value="0"><span>atomic formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_e_1" value="1"><span>formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_e_2" value="2"><span>neither</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -251,23 +167,12 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> formula</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[2]' data-name="q2_f">
-    <div class="exercise-header">
-      <span class="exercise-num">2.f</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">2.f</span></div>
     <div class="mc-question">(<i>x</i> &rarr; <i>y</i>)</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q2_f_0" value="0">
-        <span>atomic formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_f_1" value="1">
-        <span>formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_f_2" value="2">
-        <span>neither</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q2_f_0" value="0"><span>atomic formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_f_1" value="1"><span>formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_f_2" value="2"><span>neither</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -277,23 +182,12 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> neither</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[0, 1]' data-name="q2_g">
-    <div class="exercise-header">
-      <span class="exercise-num">2.g</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">2.g</span></div>
     <div class="mc-question"><i>Rayc</i></div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q2_g_0" value="0">
-        <span>atomic formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_g_1" value="1">
-        <span>formula</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q2_g_2" value="2">
-        <span>neither</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q2_g_0" value="0"><span>atomic formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_g_1" value="1"><span>formula</span></label>
+      <label class="mc-option"><input type="checkbox" name="q2_g_2" value="2"><span>neither</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -303,26 +197,15 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> atomic formula; formula</div>
   </div>
   <h2>Free and Bound Variables</h2>
-  <p>Which variables occur <em>free</em> in each formula? You can also enter each formula into the QL formula checker below to verify &mdash; it highlights free variables automatically.</p>
+  <p>Which variables occur <em>free</em> in each formula? You can enter any formula into the checker below to verify &mdash; it highlights free variables automatically.</p>
 
   <div class="exercise mc-exercise" data-correct='[1]' data-name="q3_a">
-    <div class="exercise-header">
-      <span class="exercise-num">3.a</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.a</span></div>
     <div class="mc-question">&forall;<i>x</i> <i>Rxy</i></div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q3_a_0" value="0">
-        <span>x</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_a_1" value="1">
-        <span>y</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_a_2" value="2">
-        <span>None</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q3_a_0" value="0"><span>x</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_a_1" value="1"><span>y</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_a_2" value="2"><span>None</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -332,23 +215,12 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> y</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[2]' data-name="q3_b">
-    <div class="exercise-header">
-      <span class="exercise-num">3.b</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.b</span></div>
     <div class="mc-question">&exist;<i>y</i> &forall;<i>x</i> <i>Ryx</i></div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q3_b_0" value="0">
-        <span>x</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_b_1" value="1">
-        <span>y</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_b_2" value="2">
-        <span>None</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q3_b_0" value="0"><span>x</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_b_1" value="1"><span>y</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_b_2" value="2"><span>None</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -358,27 +230,13 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> None</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[2]' data-name="q3_c">
-    <div class="exercise-header">
-      <span class="exercise-num">3.c</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.c</span></div>
     <div class="mc-question">&forall;<i>x</i> &forall;<i>y</i> (<i>Pxy</i> &harr; (<i>Qxz</i> &or; <i>Qzy</i>))</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q3_c_0" value="0">
-        <span>x</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_c_1" value="1">
-        <span>y</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_c_2" value="2">
-        <span>z</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_c_3" value="3">
-        <span>None</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q3_c_0" value="0"><span>x</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_c_1" value="1"><span>y</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_c_2" value="2"><span>z</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_c_3" value="3"><span>None</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -388,23 +246,12 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> z</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[0]' data-name="q3_d">
-    <div class="exercise-header">
-      <span class="exercise-num">3.d</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.d</span></div>
     <div class="mc-question">(&exist;<i>x</i> <i>Px</i> &or; &exist;<i>y</i> <i>Qxy</i>)</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q3_d_0" value="0">
-        <span>x</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_d_1" value="1">
-        <span>y</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_d_2" value="2">
-        <span>None</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q3_d_0" value="0"><span>x</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_d_1" value="1"><span>y</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_d_2" value="2"><span>None</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -414,23 +261,12 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> x</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[0]' data-name="q3_e">
-    <div class="exercise-header">
-      <span class="exercise-num">3.e</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.e</span></div>
     <div class="mc-question">(&forall;<i>x</i> <i>Px</i> &rarr; &forall;<i>y</i> (<i>Py</i> &rarr; <i>Rxy</i>))</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q3_e_0" value="0">
-        <span>x</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_e_1" value="1">
-        <span>y</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_e_2" value="2">
-        <span>None</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q3_e_0" value="0"><span>x</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_e_1" value="1"><span>y</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_e_2" value="2"><span>None</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -440,23 +276,12 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> x</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[2]' data-name="q3_f">
-    <div class="exercise-header">
-      <span class="exercise-num">3.f</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.f</span></div>
     <div class="mc-question">(&exist;<i>x</i> <i>Px</i> &and; &exist;<i>y</i> <i>Qy</i>)</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q3_f_0" value="0">
-        <span>x</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_f_1" value="1">
-        <span>y</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q3_f_2" value="2">
-        <span>None</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q3_f_0" value="0"><span>x</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_f_1" value="1"><span>y</span></label>
+      <label class="mc-option"><input type="checkbox" name="q3_f_2" value="2"><span>None</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -469,17 +294,14 @@
   <p>Enter any formula to see its parse tree and free variables highlighted.</p>
 
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num"></span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoiQXggUnh5In0=">Open &nearr;</a>
-    </div>
+    
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoiQXggUnh5In0=" height="320" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoiQXggUnh5In0=" height="340" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <h2>Open and Closed Formulas</h2>
   <p>Which of the following are <em>closed</em> formulas (sentences)?</p>
-  <ul style="font-family: var(--font-sans); font-size: 0.9rem; margin: 0 0 1rem 1.2rem;">
+  <ul style="font-family: var(--font-sans); font-size: 0.9rem; margin: 0 0 1rem 1.2rem; line-height: 1.9;">
     <li>a. &exist;<i>y</i> (&forall;<i>x</i> <i>Rxy</i> &rarr; <i>Py</i>)</li>
     <li>b. &exist;<i>y</i> &forall;<i>x</i> (<i>Ryx</i> &or; <i>Rxy</i>)</li>
     <li>c. (<i>Pa</i> &rarr; &forall;<i>x</i> &forall;<i>y</i>(<i>Rxy</i> &rarr; (<i>Rax</i> &and; <i>Ray</i>)))</li>
@@ -489,35 +311,15 @@
   </ul>
 
   <div class="exercise mc-exercise" data-correct='[0, 1, 2, 4, 5]' data-name="q4">
-    <div class="exercise-header">
-      <span class="exercise-num">4</span>
-    </div>
-    <div class="mc-question">Select all closed formulas (sentences) from the list above.</div>
+    <div class="exercise-header"><span class="exercise-num">4</span></div>
+    <div class="mc-question">Select all closed formulas (sentences).</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q4_0" value="0">
-        <span>a</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q4_1" value="1">
-        <span>b</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q4_2" value="2">
-        <span>c</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q4_3" value="3">
-        <span>d</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q4_4" value="4">
-        <span>e</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q4_5" value="5">
-        <span>f</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q4_0" value="0"><span>a</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_1" value="1"><span>b</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_2" value="2"><span>c</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_3" value="3"><span>d</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_4" value="4"><span>e</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_5" value="5"><span>f</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -527,72 +329,53 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> a; b; c; e; f</div>
   </div>
   <h2>Construction Trees</h2>
-  <p>Use the <strong>Build</strong> tab to construct the parse tree for each formula step by step.</p>
+  <p>Switch to the <strong>Build</strong> tab to construct the parse tree for each formula step by step.</p>
 
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">5.1</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=tree#v1:eyJmIjoiQXgoUHggLT4gUXgpIn0=">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">5.1</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoiQXgoUHggLT4gUXgpIn0=">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=tree#v1:eyJmIjoiQXgoUHggLT4gUXgpIn0=" height="420" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoiQXgoUHggLT4gUXgpIn0=" height="440" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">5.2</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=tree#v1:eyJmIjoiRXgoUHggL1xcIFJ4YSkifQ==">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">5.2</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoiRXgoUHggL1xcIFJ4YSkifQ==">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=tree#v1:eyJmIjoiRXgoUHggL1xcIFJ4YSkifQ==" height="420" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoiRXgoUHggL1xcIFJ4YSkifQ==" height="440" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">5.3</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=tree#v1:eyJmIjoifkF4KFB4IC0+IH5ReCkifQ==">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">5.3</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoifkF4KFB4IC0+IH5ReCkifQ==">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=tree#v1:eyJmIjoifkF4KFB4IC0+IH5ReCkifQ==" height="420" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoifkF4KFB4IC0+IH5ReCkifQ==" height="440" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">5.4</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=tree#v1:eyJmIjoiQXggQXkoUnh5IC0+IFJ5eCkifQ==">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">5.4</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoiQXggQXkoUnh5IC0+IFJ5eCkifQ==">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=tree#v1:eyJmIjoiQXggQXkoUnh5IC0+IFJ5eCkifQ==" height="420" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoiQXggQXkoUnh5IC0+IFJ5eCkifQ==" height="440" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">5.5</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=tree#v1:eyJmIjoiRXggRXkoUnh5IC9cXCB+Unl4KSJ9">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">5.5</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoiRXggRXkoUnh5IC9cXCB+Unl4KSJ9">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=tree#v1:eyJmIjoiRXggRXkoUnh5IC9cXCB+Unl4KSJ9" height="420" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/ql-formula-checker/?card=formula#v1:eyJmIjoiRXggRXkoUnh5IC9cXCB+Unl4KSJ9" height="440" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
-
 <script>
 function checkMC(btn) {
   const ex = btn.closest('.mc-exercise');
   const correct = JSON.parse(ex.dataset.correct);
-  const name = ex.dataset.name;
   const inputs = ex.querySelectorAll('input');
-  const checked = [...inputs].map((el,i) => el.checked ? i : -1).filter(i => i >= 0);
-  const ok = correct.length === checked.length && correct.every(i => checked.includes(i));
+  const checked = [...inputs].map((el,i)=>el.checked?i:-1).filter(i=>i>=0);
+  const ok = correct.length===checked.length && correct.every(i=>checked.includes(i));
   const fb = ex.querySelector('.mc-feedback');
   fb.hidden = false;
   fb.className = 'mc-feedback ' + (ok ? 'fb-ok' : 'fb-err');
   fb.textContent = ok ? '✓ Correct.' : '✗ Not quite — try again.';
 }
 function revealMC(btn) {
-  const ex = btn.closest('.mc-exercise');
-  ex.querySelector('.mc-answer').hidden = false;
+  btn.closest('.mc-exercise').querySelector('.mc-answer').hidden = false;
 }
 </script>
-
 </body>
 </html>

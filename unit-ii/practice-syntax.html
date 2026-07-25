@@ -6,15 +6,12 @@
   <title>USC Logic Web &mdash; Unit II: Syntax</title>
   <link rel="stylesheet" href="../shared/style.css">
   <style>
-    .exercise-header {
-      display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.4rem;
-    }
+    .exercise-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.4rem; }
     .exercise-num { font-family: var(--font-sans); font-size: 0.83rem; color: var(--color-muted); }
     .open-btn { font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-teal); text-decoration: none; }
     .open-btn:hover { text-decoration: underline; }
     .app-frame iframe { width: 100%; border: 1px solid var(--color-border); border-radius: 4px; display: block; background: #fff; }
     .exercise { margin: 0 0 2.25rem; }
-
     .mc-exercise { margin: 0 0 2rem; }
     .mc-question { margin-bottom: 0.6rem; font-style: italic; }
     .mc-options { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.7rem; }
@@ -28,10 +25,8 @@
     }
     .btn-check:hover { background: var(--color-teal); color: #fff; border-color: var(--color-teal); }
     .mc-feedback { font-family: var(--font-sans); font-size: 0.85rem; margin-bottom: 0.4rem; }
-    .fb-ok { color: #1a6e2e; }
-    .fb-err { color: #8b1a1a; }
+    .fb-ok { color: #1a6e2e; } .fb-err { color: #8b1a1a; }
     .mc-answer { font-family: var(--font-sans); font-size: 0.85rem; color: var(--color-muted); margin-top: 0.3rem; }
-
   </style>
 </head>
 <body>
@@ -52,27 +47,13 @@
   <p>Add quotation marks to produce a <em>true</em> statement. Select all correct options.</p>
 
   <div class="exercise mc-exercise" data-correct='[0]' data-name="q1_1">
-    <div class="exercise-header">
-      <span class="exercise-num">1.1</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">1.1</span></div>
     <div class="mc-question">Los Angeles designates a city in the West Coast.</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q1_1_0" value="0">
-        <span>&lsquo;Los Angeles&rsquo; designates a city in the West Coast.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_1_1" value="1">
-        <span>&lsquo;Los Angeles&rsquo; designates a city in the &lsquo;West Coast&rsquo;.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_1_2" value="2">
-        <span>Los Angeles &lsquo;designates&rsquo; a city in the West Coast.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_1_3" value="3">
-        <span>&lsquo;Los Angeles&rsquo; designates &lsquo;a city&rsquo; in the West Coast.</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q1_1_0" value="0"><span>&lsquo;Los Angeles&rsquo; designates a city in the West Coast.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_1_1" value="1"><span>&lsquo;Los Angeles&rsquo; designates a city in the &lsquo;West Coast&rsquo;.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_1_2" value="2"><span>Los Angeles &lsquo;designates&rsquo; a city in the West Coast.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_1_3" value="3"><span>&lsquo;Los Angeles&rsquo; designates &lsquo;a city&rsquo; in the West Coast.</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -82,27 +63,13 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> &lsquo;Los Angeles&rsquo; designates a city in the West Coast.</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[1]' data-name="q1_2">
-    <div class="exercise-header">
-      <span class="exercise-num">1.2</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">1.2</span></div>
     <div class="mc-question">Snow is white is not is not a grammatical sentence of English.</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q1_2_0" value="0">
-        <span>&lsquo;Snow is white&rsquo; is not is not a grammatical sentence of English.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_2_1" value="1">
-        <span>&lsquo;Snow is white is not&rsquo; is not a grammatical sentence of English.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_2_2" value="2">
-        <span>&lsquo;Snow is white&rsquo; is &lsquo;not&rsquo; is not a grammatical sentence of English.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_2_3" value="3">
-        <span>&lsquo;Snow is white is not is not&rsquo; a grammatical sentence of English.</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q1_2_0" value="0"><span>&lsquo;Snow is white&rsquo; is not is not a grammatical sentence of English.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_2_1" value="1"><span>&lsquo;Snow is white is not&rsquo; is not a grammatical sentence of English.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_2_2" value="2"><span>&lsquo;Snow is white&rsquo; is &lsquo;not&rsquo; is not a grammatical sentence of English.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_2_3" value="3"><span>&lsquo;Snow is white is not is not&rsquo; a grammatical sentence of English.</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -112,27 +79,13 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> &lsquo;Snow is white is not&rsquo; is not a grammatical sentence of English.</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[2]' data-name="q1_3">
-    <div class="exercise-header">
-      <span class="exercise-num">1.3</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">1.3</span></div>
     <div class="mc-question">What is monosyllabic but whatever is polysyllabic.</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q1_3_0" value="0">
-        <span>&lsquo;What is monosyllabic&rsquo; but &lsquo;whatever is polysyllabic&rsquo;.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_3_1" value="1">
-        <span>&lsquo;What&rsquo; is monosyllabic but whatever is polysyllabic.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_3_2" value="2">
-        <span>&lsquo;What&rsquo; is monosyllabic but &lsquo;whatever&rsquo; is polysyllabic.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_3_3" value="3">
-        <span>&lsquo;What&rsquo; is &lsquo;monosyllabic&rsquo; but &lsquo;whatever&rsquo; is &lsquo;polysyllabic&rsquo;.</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q1_3_0" value="0"><span>&lsquo;What is monosyllabic&rsquo; but &lsquo;whatever is polysyllabic&rsquo;.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_3_1" value="1"><span>&lsquo;What&rsquo; is monosyllabic but whatever is polysyllabic.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_3_2" value="2"><span>&lsquo;What&rsquo; is monosyllabic but &lsquo;whatever&rsquo; is polysyllabic.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_3_3" value="3"><span>&lsquo;What&rsquo; is &lsquo;monosyllabic&rsquo; but &lsquo;whatever&rsquo; is &lsquo;polysyllabic&rsquo;.</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -142,27 +95,13 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> &lsquo;What&rsquo; is monosyllabic but &lsquo;whatever&rsquo; is polysyllabic.</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[2, 3]' data-name="q1_4">
-    <div class="exercise-header">
-      <span class="exercise-num">1.4</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">1.4</span></div>
     <div class="mc-question">Snow refers to snow. Select any true statements.</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q1_4_0" value="0">
-        <span>Snow refers to &lsquo;snow&rsquo;.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_4_1" value="1">
-        <span>&lsquo;Snow&rsquo; refers to &lsquo;&lsquo;snow&rsquo;&rsquo;.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_4_2" value="2">
-        <span>&lsquo;&lsquo;Snow&rsquo;&rsquo; refers to &lsquo;snow&rsquo;.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_4_3" value="3">
-        <span>&lsquo;Snow&rsquo; refers to snow.</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q1_4_0" value="0"><span>Snow refers to &lsquo;snow&rsquo;.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_4_1" value="1"><span>&lsquo;Snow&rsquo; refers to &lsquo;&lsquo;snow&rsquo;&rsquo;.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_4_2" value="2"><span>&lsquo;&lsquo;Snow&rsquo;&rsquo; refers to &lsquo;snow&rsquo;.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_4_3" value="3"><span>&lsquo;Snow&rsquo; refers to snow.</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -172,27 +111,13 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> &lsquo;&lsquo;Snow&rsquo;&rsquo; refers to &lsquo;snow&rsquo;.; &lsquo;Snow&rsquo; refers to snow.</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[3]' data-name="q1_5">
-    <div class="exercise-header">
-      <span class="exercise-num">1.5</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">1.5</span></div>
     <div class="mc-question">San Diego in the morning, Santa Barbara in the afternoon, and San Francisco in the evening all start with San. Select any true statements.</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="checkbox" name="q1_5_0" value="0">
-        <span>&lsquo;San Diego&rsquo; in the morning, &lsquo;Santa Barbara&rsquo; in the afternoon, and &lsquo;San Francisco&rsquo; in the evening all start with San.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_5_1" value="1">
-        <span>&lsquo;San Diego in the morning&rsquo;, &lsquo;Santa Barbara in the afternoon&rsquo;, and &lsquo;San Francisco in the evening&rsquo; all start with San.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_5_2" value="2">
-        <span>&lsquo;San Diego in the morning&rsquo;, &lsquo;Santa Barbara in the afternoon&rsquo;, &lsquo;and San Francisco in the evening&rsquo; all start with &lsquo;San&rsquo;.</span>
-      </label>
-      <label class="mc-option">
-        <input type="checkbox" name="q1_5_3" value="3">
-        <span>&lsquo;San Diego in the morning, Santa Barbara in the afternoon&rsquo;, and &lsquo;San Francisco in the evening&rsquo; all start with &lsquo;San&rsquo;.</span>
-      </label>
+      <label class="mc-option"><input type="checkbox" name="q1_5_0" value="0"><span>&lsquo;San Diego&rsquo; in the morning, &lsquo;Santa Barbara&rsquo; in the afternoon, and &lsquo;San Francisco&rsquo; in the evening all start with San.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_5_1" value="1"><span>&lsquo;San Diego in the morning&rsquo;, &lsquo;Santa Barbara in the afternoon&rsquo;, and &lsquo;San Francisco in the evening&rsquo; all start with San.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_5_2" value="2"><span>&lsquo;San Diego in the morning&rsquo;, &lsquo;Santa Barbara in the afternoon&rsquo;, &lsquo;and San Francisco in the evening&rsquo; all start with &lsquo;San&rsquo;.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q1_5_3" value="3"><span>&lsquo;San Diego in the morning, Santa Barbara in the afternoon&rsquo;, and &lsquo;San Francisco in the evening&rsquo; all start with &lsquo;San&rsquo;.</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -205,19 +130,11 @@
   <p>Is each expression part of the official vocabulary of propositional logic?</p>
 
   <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_1">
-    <div class="exercise-header">
-      <span class="exercise-num">2.1</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">2.1</span></div>
     <div class="mc-question">&phi; (phi)</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="radio" name="q2_1_0" value="0">
-        <span>Yes</span>
-      </label>
-      <label class="mc-option">
-        <input type="radio" name="q2_1_1" value="1">
-        <span>No</span>
-      </label>
+      <label class="mc-option"><input type="radio" name="q2_1_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_1_1" value="1"><span>No</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -227,19 +144,11 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[0]' data-name="q2_2">
-    <div class="exercise-header">
-      <span class="exercise-num">2.2</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">2.2</span></div>
     <div class="mc-question">&rarr;</div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="radio" name="q2_2_0" value="0">
-        <span>Yes</span>
-      </label>
-      <label class="mc-option">
-        <input type="radio" name="q2_2_1" value="1">
-        <span>No</span>
-      </label>
+      <label class="mc-option"><input type="radio" name="q2_2_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_2_1" value="1"><span>No</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -249,19 +158,11 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> Yes</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_3">
-    <div class="exercise-header">
-      <span class="exercise-num">2.3</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">2.3</span></div>
     <div class="mc-question"><i>a</i></div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="radio" name="q2_3_0" value="0">
-        <span>Yes</span>
-      </label>
-      <label class="mc-option">
-        <input type="radio" name="q2_3_1" value="1">
-        <span>No</span>
-      </label>
+      <label class="mc-option"><input type="radio" name="q2_3_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_3_1" value="1"><span>No</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -271,19 +172,11 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
   </div>
   <div class="exercise mc-exercise" data-correct='[0]' data-name="q2_4">
-    <div class="exercise-header">
-      <span class="exercise-num">2.4</span>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">2.4</span></div>
     <div class="mc-question"><i>p</i><sub>2</sub></div>
     <div class="mc-options">
-      <label class="mc-option">
-        <input type="radio" name="q2_4_0" value="0">
-        <span>Yes</span>
-      </label>
-      <label class="mc-option">
-        <input type="radio" name="q2_4_1" value="1">
-        <span>No</span>
-      </label>
+      <label class="mc-option"><input type="radio" name="q2_4_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_4_1" value="1"><span>No</span></label>
     </div>
     <div class="mc-controls">
       <button class="btn-check" onclick="checkMC(this)">Check</button>
@@ -293,156 +186,110 @@
     <div class="mc-answer" hidden><strong>Answer:</strong> Yes</div>
   </div>
   <h2>Construction Trees</h2>
-  <p>Each exercise loads a formula into the formula checker. Use the <strong>Build</strong> tab to construct the parse tree step by step, identifying the main connective at each stage.</p>
+  <p>Each exercise loads a formula into the formula checker. Switch to the <strong>Build</strong> tab to construct the parse tree step by step, identifying the main connective at each stage.</p>
 
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">3.1</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKHAgL1xcIHEpIiwiYXNzaWdubWVudCI6e319">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.1</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKHAgL1xcIHEpIn0=">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKHAgL1xcIHEpIiwiYXNzaWdubWVudCI6e319" height="400" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKHAgL1xcIHEpIn0=" height="420" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">3.2</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKHAgLT4gKHEgL1xcIH5yKSkiLCJhc3NpZ25tZW50Ijp7fX0=">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.2</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKHAgLT4gKHEgL1xcIH5yKSkifQ==">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKHAgLT4gKHEgL1xcIH5yKSkiLCJhc3NpZ25tZW50Ijp7fX0=" height="400" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKHAgLT4gKHEgL1xcIH5yKSkifQ==" height="420" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">3.3</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKChwIFxcLyBxKSAtPiByKSIsImFzc2lnbm1lbnQiOnt9fQ==">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.3</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKChwIFxcLyBxKSAtPiByKSJ9">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKChwIFxcLyBxKSAtPiByKSIsImFzc2lnbm1lbnQiOnt9fQ==" height="400" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKChwIFxcLyBxKSAtPiByKSJ9" height="420" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">3.4</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKH5wIC9cXCAofnEgLT4gcikpIiwiYXNzaWdubWVudCI6e319">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.4</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKH5wIC9cXCAofnEgLT4gcikpIn0=">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKH5wIC9cXCAofnEgLT4gcikpIiwiYXNzaWdubWVudCI6e319" height="400" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKH5wIC9cXCAofnEgLT4gcikpIn0=" height="420" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">3.5</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoifihwIC9cXCB+fnEpIiwiYXNzaWdubWVudCI6e319">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.5</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoifihwIC9cXCB+fnEpIn0=">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoifihwIC9cXCB+fnEpIiwiYXNzaWdubWVudCI6e319" height="400" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoifihwIC9cXCB+fnEpIn0=" height="420" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">3.6</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKHAgL1xcIChxIC0+IChyIFxcLyBxKSkpIiwiYXNzaWdubWVudCI6e319">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.6</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKHAgL1xcIChxIC0+IChyIFxcLyBxKSkpIn0=">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKHAgL1xcIChxIC0+IChyIFxcLyBxKSkpIiwiYXNzaWdubWVudCI6e319" height="400" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKHAgL1xcIChxIC0+IChyIFxcLyBxKSkpIn0=" height="420" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">3.7</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoifn4ocCAtPiAocSAvXFwgKHAgLT4gcikpKSIsImFzc2lnbm1lbnQiOnt9fQ==">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.7</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoifn4ocCAtPiAocSAvXFwgKHAgLT4gcikpKSJ9">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoifn4ocCAtPiAocSAvXFwgKHAgLT4gcikpKSIsImFzc2lnbm1lbnQiOnt9fQ==" height="400" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoifn4ocCAtPiAocSAvXFwgKHAgLT4gcikpKSJ9" height="420" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">3.8</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKCgocCAvXFwgcSkgLT4gfih+cSBcXC8gfnApKSAtPiBwKSIsImFzc2lnbm1lbnQiOnt9fQ==">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.8</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKCgocCAvXFwgcSkgLT4gfih+cSBcXC8gfnApKSAtPiBwKSJ9">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKCgocCAvXFwgcSkgLT4gfih+cSBcXC8gfnApKSAtPiBwKSIsImFzc2lnbm1lbnQiOnt9fQ==" height="400" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKCgocCAvXFwgcSkgLT4gfih+cSBcXC8gfnApKSAtPiBwKSJ9" height="420" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">3.9</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKHAgL1xcIChxIC0+IHApKSAtPiAocSAtPiAocCBcXC8gcSkpIiwiYXNzaWdubWVudCI6e319">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.9</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKHAgL1xcIChxIC0+IHApKSAtPiAocSAtPiAocCBcXC8gcSkpIn0=">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKHAgL1xcIChxIC0+IHApKSAtPiAocSAtPiAocCBcXC8gcSkpIiwiYXNzaWdubWVudCI6e319" height="400" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKHAgL1xcIChxIC0+IHApKSAtPiAocSAtPiAocCBcXC8gcSkpIn0=" height="420" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">3.10</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKH4ocCAtPiAocCAvXFwgcSkpIC0+ICh+cCAtPiAofnEgXFwvIH5yKSkpIiwiYXNzaWdubWVudCI6e319">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">3.10</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKH4ocCAtPiAocCAvXFwgcSkpIC0+ICh+cCAtPiAofnEgXFwvIH5yKSkpIn0=">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKH4ocCAtPiAocCAvXFwgcSkpIC0+ICh+cCAtPiAofnEgXFwvIH5yKSkpIiwiYXNzaWdubWVudCI6e319" height="400" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKH4ocCAtPiAocCAvXFwgcSkpIC0+ICh+cCAtPiAofnEgXFwvIH5yKSkpIn0=" height="420" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <h2>Notational Conventions</h2>
   <p>These expressions omit outer parentheses by convention. Identify the main connective and construct the tree for the corresponding official formula.</p>
 
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">4.1</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoicCAvXFwgKHEgL1xcIHIpIiwiYXNzaWdubWVudCI6e319">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">4.1</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoicCAvXFwgKHEgL1xcIHIpIn0=">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoicCAvXFwgKHEgL1xcIHIpIiwiYXNzaWdubWVudCI6e319" height="380" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoicCAvXFwgKHEgL1xcIHIpIn0=" height="400" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">4.2</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKHAgLT4gcSkgL1xcIHIiLCJhc3NpZ25tZW50Ijp7fX0=">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">4.2</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKHAgLT4gcSkgL1xcIHIifQ==">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKHAgLT4gcSkgL1xcIHIiLCJhc3NpZ25tZW50Ijp7fX0=" height="380" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKHAgLT4gcSkgL1xcIHIifQ==" height="400" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">4.3</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoicCAvXFwgKHEgLT4gcSkiLCJhc3NpZ25tZW50Ijp7fX0=">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">4.3</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoicCAvXFwgKHEgLT4gcSkifQ==">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoicCAvXFwgKHEgLT4gcSkiLCJhc3NpZ25tZW50Ijp7fX0=" height="380" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoicCAvXFwgKHEgLT4gcSkifQ==" height="400" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
   <div class="exercise">
-    <div class="exercise-header">
-      <span class="exercise-num">4.4</span>
-      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKHAgLT4gcSkgLT4gciIsImFzc2lnbm1lbnQiOnt9fQ==">Open &nearr;</a>
-    </div>
+    <div class="exercise-header"><span class="exercise-num">4.4</span><a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKHAgLT4gcSkgLT4gciJ9">Open &nearr;</a></div>
     <div class="app-frame">
-      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=tree#v1:eyJmb3JtdWxhIjoiKHAgLT4gcSkgLT4gciIsImFzc2lnbm1lbnQiOnt9fQ==" height="380" loading="lazy" allow="fullscreen"></iframe>
+      <iframe src="https://gabriel-uzquiano.github.io/prop-formula-checker/?card=formula#v1:eyJmIjoiKHAgLT4gcSkgLT4gciJ9" height="400" loading="lazy" allow="fullscreen"></iframe>
     </div>
   </div>
-
 <script>
 function checkMC(btn) {
   const ex = btn.closest('.mc-exercise');
   const correct = JSON.parse(ex.dataset.correct);
-  const name = ex.dataset.name;
   const inputs = ex.querySelectorAll('input');
-  const checked = [...inputs].map((el,i) => el.checked ? i : -1).filter(i => i >= 0);
-  const ok = correct.length === checked.length && correct.every(i => checked.includes(i));
+  const checked = [...inputs].map((el,i)=>el.checked?i:-1).filter(i=>i>=0);
+  const ok = correct.length===checked.length && correct.every(i=>checked.includes(i));
   const fb = ex.querySelector('.mc-feedback');
   fb.hidden = false;
   fb.className = 'mc-feedback ' + (ok ? 'fb-ok' : 'fb-err');
   fb.textContent = ok ? '✓ Correct.' : '✗ Not quite — try again.';
 }
 function revealMC(btn) {
-  const ex = btn.closest('.mc-exercise');
-  ex.querySelector('.mc-answer').hidden = false;
+  btn.closest('.mc-exercise').querySelector('.mc-answer').hidden = false;
 }
 </script>
-
 </body>
 </html>
