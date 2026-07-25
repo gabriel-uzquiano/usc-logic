@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>USC Logic Web</title>
   <link rel="stylesheet" href="shared/style.css">
+  <style>
+    .unit-section { margin: 1.75rem 0 0; }
+    .unit-section h2 {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-muted);
+      margin: 0 0 0.25rem;
+      font-weight: 600;
+    }
+    /* Reset first-child border so it applies to each section's first li */
+    .unit-section .unit-list li:first-child { border-top: 1px solid var(--color-border); }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -14,28 +28,36 @@
 
   <p>Interactive exercises to accompany the course. Select a unit below.</p>
 
-  <h2>Units</h2>
-  <ul class="unit-list">
-    <li>
-      <span class="unit-label">III</span>
-      <a href="unit-iii/practice-truth-tables.html">Truth Tables</a>
-    </li>
-    <li>
-      <span class="unit-label">IV</span>
-      <a href="unit-iv/practice-translation.html">Translation</a>
-    </li>
-    <li>
-      <span class="unit-label">V</span>
-      <a href="unit-v/practice-proof.html">Natural Deduction (Propositional)</a>
-    </li>
-    <li>
-      <span class="unit-label">VII</span>
-      <a href="unit-vii/practice-models.html">Model Construction</a>
-    </li>
-    <li>
-      <span class="unit-label">IX</span>
-      <a href="unit-ix/practice-proof.html">Natural Deduction (Quantificational)</a>
-    </li>
-  </ul>
+  <div class="unit-section">
+    <h2>Propositional Logic</h2>
+    <ul class="unit-list">
+      <li>
+        <span class="unit-label">III</span>
+        <a href="unit-iii/practice-truth-tables.html">Truth Tables</a>
+      </li>
+      <li>
+        <span class="unit-label">IV</span>
+        <a href="unit-iv/practice-translation.html">Translation</a>
+      </li>
+      <li>
+        <span class="unit-label">V</span>
+        <a href="unit-v/practice-proof.html">Natural Deduction</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="unit-section">
+    <h2>Quantificational Logic</h2>
+    <ul class="unit-list">
+      <li>
+        <span class="unit-label">VII</span>
+        <a href="unit-vii/practice-models.html">Models</a>
+      </li>
+      <li>
+        <span class="unit-label">IX</span>
+        <a href="unit-ix/practice-proof.html">Natural Deduction</a>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
