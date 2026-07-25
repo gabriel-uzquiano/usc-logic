@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USC Logic Web &mdash; Unit VII: Models</title>
+  <link rel="stylesheet" href="../shared/style.css">
+  <style>
+    .exercise-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.4rem;
+    }
+    .exercise-num {
+      font-family: var(--font-sans);
+      font-size: 0.83rem;
+      color: var(--color-muted);
+    }
+    .open-btn {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      color: var(--color-teal);
+      text-decoration: none;
+    }
+    .open-btn:hover { text-decoration: underline; }
+    .app-frame iframe {
+      width: 100%;
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      display: block;
+      background: #fff;
+    }
+    .exercise { margin: 0 0 2.25rem; }
+    .exercise-note {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--color-muted);
+      margin: 0 0 0.4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="course-label">University of Southern California &middot; Philosophy</div>
+    <h1>USC Logic Web</h1>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>&rsaquo;</span>
+    Unit VII
+    <span>&rsaquo;</span>
+    Model Construction Practice
+  </nav>
+
+  <p>Specify the domain as a list of natural numbers (e.g., 0, 1, 2).
+  For each constant, give its denotation. For each one-place predicate, list the domain elements it applies to.
+  For two-place predicates, list ordered pairs such as [0,&thinsp;1]; for three-place predicates, ordered triples.</p>
+
+
+  <h2>Consistency</h2>
+  <p>For each set of sentences below, provide a model in which they are all true.</p>
+
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.1</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIlJhYiIsIlJhYiAtPiBSYmIiLCJQYSAvXFwgUWIiLCItUWEgL1xcIC1QYiJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIlJhYiIsIlJhYiAtPiBSYmIiLCJQYSAvXFwgUWIiLCItUWEgL1xcIC1QYiJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.2</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIlBhIiwiUWIiLCJSYWEiLCIoUWIgL1xcIFBhKSAtPiBSYmEiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIlBhIiwiUWIiLCJSYWEiLCIoUWIgL1xcIFBhKSAtPiBSYmEiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.3</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIlBhIiwiUWIiLCItRXggKFB4IC9cXCBReCkiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIlBhIiwiUWIiLCItRXggKFB4IC9cXCBReCkiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.4</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IChQeCBcXC8gUXgpIiwiLShBeCBQeCBcXC8gQXggUXgpIl0sImQiOltdLCJpIjp7fSwicyI6e319">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IChQeCBcXC8gUXgpIiwiLShBeCBQeCBcXC8gQXggUXgpIl0sImQiOltdLCJpIjp7fSwicyI6e319" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.5</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkV4IChQeCAvXFwgUXgpIiwiQXggKFB4IC0+IChSeCAtPiAtUXgpKSIsIlBhIC9cXCBSYSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkV4IChQeCAvXFwgUXgpIiwiQXggKFB4IC0+IChSeCAtPiAtUXgpKSIsIlBhIC9cXCBSYSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.6</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IChQeCAtPiBReCkiLCJSYWJiIiwiRXggKFF4IC9cXCBSeHhhKSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IChQeCAtPiBReCkiLCJSYWJiIiwiRXggKFF4IC9cXCBSeHhhKSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.7</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IFB4IC0+IEF4IFF4IiwiLUF4IChQeCAtPiBReCkiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IFB4IC0+IEF4IFF4IiwiLUF4IChQeCAtPiBReCkiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.8</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IChSYXggLT4gUHgpIiwiRXggUnh4IiwiLVJhYSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IChSYXggLT4gUHgpIiwiRXggUnh4IiwiLVJhYSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.9</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IEF5IChSeHkgLT4gUnl4KSIsIkF4IEV5IFJ4eSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IEF5IChSeHkgLT4gUnl4KSIsIkF4IEV5IFJ4eSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1.10</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IEV5IFJ4eSIsIi1FeCBBeSBSeHkiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IEV5IFJ4eSIsIi1FeCBBeSBSeHkiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <h2>Equivalence</h2>
+  <p>Provide a counterexample to the equivalence of each pair of sentences: build a model in which one is true and the other is false.</p>
+
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.11</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIlBhIC9cXCBQYiIsIkF4IFB4Il0sImQiOltdLCJpIjp7fSwicyI6e319">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIlBhIC9cXCBQYiIsIkF4IFB4Il0sImQiOltdLCJpIjp7fSwicyI6e319" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.12</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIi1BeCAoUHggL1xcIFF4KSIsIi1FeCAoUHggL1xcIFF4KSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIi1BeCAoUHggL1xcIFF4KSIsIi1FeCAoUHggL1xcIFF4KSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2.13</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IChQeCAtPiBReCkiLCIoQXggUHggLT4gQXggUXgpIl0sImQiOltdLCJpIjp7fSwicyI6e319">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IChQeCAtPiBReCkiLCIoQXggUHggLT4gQXggUXgpIl0sImQiOltdLCJpIjp7fSwicyI6e319" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <h2>Validity</h2>
+  <p>Provide a counterexample to the validity of each argument: build a model in which the premises are all true but the conclusion is false. The negation of the conclusion appears as the last formula.</p>
+
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">3.14</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IChQeCAtPiBReCkiLCItKEF4IC1QeCBcXC8gQXggUXgpIl0sImQiOltdLCJpIjp7fSwicyI6e319">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IChQeCAtPiBReCkiLCItKEF4IC1QeCBcXC8gQXggUXgpIl0sImQiOltdLCJpIjp7fSwicyI6e319" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">3.15</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkV4IFB4IC9cXCBFeCBReCIsIi1FeCAoUHggL1xcIFF4KSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkV4IFB4IC9cXCBFeCBReCIsIi1FeCAoUHggL1xcIFF4KSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">3.16</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIi1BeCAoUHggLT4gLVF4KSIsIi1BeCAoUHggLT4gUXgpIl0sImQiOltdLCJpIjp7fSwicyI6e319">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIi1BeCAoUHggLT4gLVF4KSIsIi1BeCAoUHggLT4gUXgpIl0sImQiOltdLCJpIjp7fSwicyI6e319" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">3.17</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4ICgtUHggLT4gUXgpIiwiRXggKFF4IC9cXCBSeGIpIiwiLUV4ICgtUHggL1xcIFJ4YikiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4ICgtUHggLT4gUXgpIiwiRXggKFF4IC9cXCBSeGIpIiwiLUV4ICgtUHggL1xcIFJ4YikiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">3.18</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IChQeCAtPiBSeGEpIiwiRXggKFF4IC9cXCBSYXgpIiwiLUV4IChQeCAvXFwgRXkgKFF5IC9cXCBSeHkpKSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IChQeCAtPiBSeGEpIiwiRXggKFF4IC9cXCBSYXgpIiwiLUV4IChQeCAvXFwgRXkgKFF5IC9cXCBSeHkpKSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">3.19</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IC1SeHgiLCJBeCBBeSBBeiAoKFJ4eSAvXFwgUnl6KSAtPiBSeHopIiwiLUF4IEF5IC1SeHkiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IC1SeHgiLCJBeCBBeSBBeiAoKFJ4eSAvXFwgUnl6KSAtPiBSeHopIiwiLUF4IEF5IC1SeHkiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">3.20</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IC1SeHgiLCJBeCBBeSBBeiAoKFJ4eSAvXFwgUnl6KSAtPiBSeHopIiwiLUF4IEF5IEF6IChSeHkgLT4gLVJ5eikiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4IC1SeHgiLCJBeCBBeSBBeiAoKFJ4eSAvXFwgUnl6KSAtPiBSeHopIiwiLUF4IEF5IEF6IChSeHkgLT4gLVJ5eikiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=" height="500" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+</body>
+</html>
