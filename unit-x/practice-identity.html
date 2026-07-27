@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USC Logic Web — Unit X: Identity</title>
+  <link rel="stylesheet" href="../shared/style.css">
+  <style>
+    .exercise-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.4rem; }
+    .exercise-num { font-family: var(--font-sans); font-size: 0.83rem; color: var(--color-muted); }
+    .open-btn { font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-teal); text-decoration: none; }
+    .open-btn:hover { text-decoration: underline; }
+    .app-frame iframe { width: 100%; border: 1px solid var(--color-border); border-radius: 4px; display: block; background: #fff; }
+    .exercise { margin: 0 0 2.25rem; }
+    blockquote { border-left: 3px solid var(--color-border); margin: 0.5rem 0 1rem 0; padding: 0.3rem 1rem; font-family: var(--font-sans); color: var(--color-muted); }
+    .mc-exercise { margin: 0 0 2rem; }
+    .mc-question { margin-bottom: 0.6rem; }
+    .mc-options { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.7rem; }
+    .mc-option { display: flex; align-items: baseline; gap: 0.5rem; cursor: pointer; font-family: var(--font-sans); font-size: 0.9rem; }
+    .mc-option input { margin: 0; flex-shrink: 0; }
+    .mc-controls { display: flex; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .btn-check, .btn-reveal {
+      font-family: var(--font-sans); font-size: 0.78rem; padding: 0.25rem 0.75rem;
+      border-radius: 4px; cursor: pointer; border: 1px solid var(--color-border);
+      background: var(--color-bg); color: var(--color-text);
+    }
+    .btn-check:hover { background: var(--color-teal); color: #fff; border-color: var(--color-teal); }
+    .mc-feedback { font-family: var(--font-sans); font-size: 0.85rem; margin-bottom: 0.4rem; }
+    .fb-ok { color: #1a6e2e; } .fb-err { color: #8b1a1a; }
+    .mc-answer { font-family: var(--font-sans); font-size: 0.85rem; color: var(--color-muted); margin-top: 0.3rem; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="course-label">University of Southern California · Philosophy</div>
+    <h1>USC Logic Web</h1>
+  </header>
+  <nav class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>&rsaquo;</span>
+    Unit X
+    <span>&rsaquo;</span>
+    Identity
+  </nav>
+  <p>Exercises on quantificational logic with identity: model construction, translation, and natural deduction.</p>
+
+  <h2>Model Construction</h2>
+  <h3>Consistency</h3>
+  <p>For each set of sentences, provide a model in which they are all true.</p>
+
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">1</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIlJhYiIsIlJhYiAtPiBSYmIiLCJQYSAvXFwgUWIiLCJSY2IiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIlJhYiIsIlJhYiAtPiBSYmIiLCJQYSAvXFwgUWIiLCJSY2IiXSwiZCI6W10sImkiOnt9LCJzIjp7fX0=" height="520" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">2</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkV4KFB4IC9cXCBBeShQeSAtPiB4PXkpKSIsIkF4KFB4IC0+IFF4KSIsIlBhIiwiLVFiIl0sImQiOltdLCJpIjp7fSwicyI6e319">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkV4KFB4IC9cXCBBeShQeSAtPiB4PXkpKSIsIkF4KFB4IC0+IFF4KSIsIlBhIiwiLVFiIl0sImQiOltdLCJpIjp7fSwicyI6e319" height="520" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">3</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4KFB4IC0+IEV5KFF5IC9cXCAteD15KSkiLCItQXgoUHggLT4gUXgpIiwiLUF4KFF4IC0+IFB4KSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/#v2:eyJmIjpbIkF4KFB4IC0+IEV5KFF5IC9cXCAteD15KSkiLCItQXgoUHggLT4gUXgpIiwiLUF4KFF4IC0+IFB4KSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==" height="520" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>  <h3>Validity</h3>
+  <p>For each argument, provide a model making the premises true and the conclusion false. The negation of the conclusion appears as the last formula.</p>
+
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">4</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/?mode=validity#v2:eyJmIjpbIkV4KFB4IC9cXCBReCkiLCJQYSIsIlFiIiwiLShhPWIpIl0sImQiOltdLCJpIjp7fSwicyI6e319">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/?mode=validity#v2:eyJmIjpbIkV4KFB4IC9cXCBReCkiLCJQYSIsIlFiIiwiLShhPWIpIl0sImQiOltdLCJpIjp7fSwicyI6e319" height="520" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">5</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/?mode=validity#v2:eyJmIjpbIlBhIiwiQXgoUHggLT4gUnh4KSIsIkF4KFJ4eCAtPiAoeD1hIFxcLyB4PWIpKSIsIi0oLShhPWIpKSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/?mode=validity#v2:eyJmIjpbIlBhIiwiQXgoUHggLT4gUnh4KSIsIkF4KFJ4eCAtPiAoeD1hIFxcLyB4PWIpKSIsIi0oLShhPWIpKSJdLCJkIjpbXSwiaSI6e30sInMiOnt9fQ==" height="520" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">6</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/model-checker/?mode=validity#v2:eyJmIjpbIkF4KFB4IC0+IHg9YSkiLCJBeChQeCAtPiBReCkiLCItKEF4KFF4IC0+IHg9YSkpIl0sImQiOltdLCJpIjp7fSwicyI6e319">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/model-checker/?mode=validity#v2:eyJmIjpbIkF4KFB4IC0+IHg9YSkiLCJBeChQeCAtPiBReCkiLCItKEF4KFF4IC0+IHg9YSkpIl0sImQiOltdLCJpIjp7fSwicyI6e319" height="520" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <h2>Translation</h2>
+  <p>Translate each sentence using the key provided. You may choose your own predicate and constant letters in the worksheet.</p>
+
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">7</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJBY2hpbGxlcyBmZWFycyBIZWN0b3IgYW5kIFBhcmlzLCBidXQgaGUgZmVhcnMgbm8gb25lIGVsc2UuIiwicmVmRm9ybXVsYSI6IihSYWIg4oinIFJhYykg4oinIOKIgHgoUmF4IOKGkiAoeD1iIOKIqCB4PWEpKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJBY2hpbGxlcyBmZWFycyBIZWN0b3IgYW5kIFBhcmlzLCBidXQgaGUgZmVhcnMgbm8gb25lIGVsc2UuIiwicmVmRm9ybXVsYSI6IihSYWIg4oinIFJhYykg4oinIOKIgHgoUmF4IOKGkiAoeD1iIOKIqCB4PWEpKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=" height="440" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">8</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJPbmx5IEFjaGlsbGVzIGlzIEdyZWVrLiIsInJlZkZvcm11bGEiOiLiiIB4KFB4IOKGkiB4PWEpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJPbmx5IEFjaGlsbGVzIGlzIEdyZWVrLiIsInJlZkZvcm11bGEiOiLiiIB4KFB4IOKGkiB4PWEpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==" height="440" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">9</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJJZiBhbnkgVHJvamFuIGlzIGZlYXJlZCBieSBldmVyeSBHcmVlaywgdGhlbiB0aGF0IFRyb2phbiBpcyBIZWN0b3IuIiwicmVmRm9ybXVsYSI6IuKIgHgoKFF4IOKIpyDiiIB5KFB5IOKGkiBSeXgpKSDihpIgeD1iKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJJZiBhbnkgVHJvamFuIGlzIGZlYXJlZCBieSBldmVyeSBHcmVlaywgdGhlbiB0aGF0IFRyb2phbiBpcyBIZWN0b3IuIiwicmVmRm9ybXVsYSI6IuKIgHgoKFF4IOKIpyDiiIB5KFB5IOKGkiBSeXgpKSDihpIgeD1iKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=" height="440" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">10</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJBY2hpbGxlcyBmZWFycyBhdCBsZWFzdCB0d28gVHJvamFucy4iLCJyZWZGb3JtdWxhIjoi4oiDeCgoUXgg4oinIFJheCkg4oinIOKIg3koKFF5IOKIpyBSYXkpIOKIpyDCrHg9eSkpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJBY2hpbGxlcyBmZWFycyBhdCBsZWFzdCB0d28gVHJvamFucy4iLCJyZWZGb3JtdWxhIjoi4oiDeCgoUXgg4oinIFJheCkg4oinIOKIg3koKFF5IOKIpyBSYXkpIOKIpyDCrHg9eSkpIiwicmVmUHJlZGljYXRlcyI6W3sibGV0dGVyIjoiUCIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIEdyZWVrIn0seyJsZXR0ZXIiOiJRIiwiYXJpdHkiOjEsImNsYXVzZSI6Il8gaXMgVHJvamFuIn0seyJsZXR0ZXIiOiJSIiwiYXJpdHkiOjIsImNsYXVzZSI6Il8gZmVhcnMgXyJ9XSwicmVmQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiJhIiwibmFtZSI6IkFjaGlsbGVzIn0seyJsZXR0ZXIiOiJiIiwibmFtZSI6IkhlY3RvciJ9LHsibGV0dGVyIjoiYyIsIm5hbWUiOiJQYXJpcyJ9XX1dLCJ3c1ByZWRpY2F0ZXMiOlt7ImxldHRlciI6IiIsImFyaXR5IjoxLCJjbGF1c2UiOiIifV0sIndzQ29uc3RhbnRzIjpbeyJsZXR0ZXIiOiIiLCJuYW1lIjoiIn1dLCJ0cmFucyI6W3siZm9ybXVsYSI6IiIsInJldmVhbGVkIjpmYWxzZX1dfQ==" height="440" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">11</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJUaGVyZSBpcyBleGFjdGx5IG9uZSBHcmVlayBIZWN0b3IgZmVhcnMsIGFuZCB0aGF0IGlzIEFjaGlsbGVzLiIsInJlZkZvcm11bGEiOiLiiIN4KCgoUHgg4oinIFJieCkg4oinIOKIgHkoKFB5IOKIpyBSYnkpIOKGkiB5PXgpKSDiiKcgeD1hKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/ql-translation/#v1:eyJzZW50ZW5jZXMiOlt7InRleHQiOiJUaGVyZSBpcyBleGFjdGx5IG9uZSBHcmVlayBIZWN0b3IgZmVhcnMsIGFuZCB0aGF0IGlzIEFjaGlsbGVzLiIsInJlZkZvcm11bGEiOiLiiIN4KCgoUHgg4oinIFJieCkg4oinIOKIgHkoKFB5IOKIpyBSYnkpIOKGkiB5PXgpKSDiiKcgeD1hKSIsInJlZlByZWRpY2F0ZXMiOlt7ImxldHRlciI6IlAiLCJhcml0eSI6MSwiY2xhdXNlIjoiXyBpcyBHcmVlayJ9LHsibGV0dGVyIjoiUSIsImFyaXR5IjoxLCJjbGF1c2UiOiJfIGlzIFRyb2phbiJ9LHsibGV0dGVyIjoiUiIsImFyaXR5IjoyLCJjbGF1c2UiOiJfIGZlYXJzIF8ifV0sInJlZkNvbnN0YW50cyI6W3sibGV0dGVyIjoiYSIsIm5hbWUiOiJBY2hpbGxlcyJ9LHsibGV0dGVyIjoiYiIsIm5hbWUiOiJIZWN0b3IifSx7ImxldHRlciI6ImMiLCJuYW1lIjoiUGFyaXMifV19XSwid3NQcmVkaWNhdGVzIjpbeyJsZXR0ZXIiOiIiLCJhcml0eSI6MSwiY2xhdXNlIjoiIn1dLCJ3c0NvbnN0YW50cyI6W3sibGV0dGVyIjoiIiwibmFtZSI6IiJ9XSwidHJhbnMiOlt7ImZvcm11bGEiOiIiLCJyZXZlYWxlZCI6ZmFsc2V9XX0=" height="440" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <h2>Natural Deduction</h2>
+  <p>Each exercise loads with the premises pre-filled. Complete the proof using <strong>P</strong> for premises, <strong>I=</strong> for reflexivity of identity, and <strong>E=</strong> for substitution of identicals.</p>
+
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">12</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/proof-checker/#p=%E2%88%80x%28Px+%E2%86%92+Qx%29%2C+-Qa&c=a%3Db+%E2%86%92+-Pb&pr=%E2%88%80x%28Px+%E2%86%92+Qx%29++P%0A-Qa++P">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/proof-checker/#p=%E2%88%80x%28Px+%E2%86%92+Qx%29%2C+-Qa&c=a%3Db+%E2%86%92+-Pb&pr=%E2%88%80x%28Px+%E2%86%92+Qx%29++P%0A-Qa++P" height="580" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">13</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/proof-checker/#p=%E2%88%80x%28x%3Da+%E2%86%92+Rxx%29&c=%E2%88%83x+Rxx&pr=%E2%88%80x%28x%3Da+%E2%86%92+Rxx%29++P">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/proof-checker/#p=%E2%88%80x%28x%3Da+%E2%86%92+Rxx%29&c=%E2%88%83x+Rxx&pr=%E2%88%80x%28x%3Da+%E2%86%92+Rxx%29++P" height="520" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">14</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/proof-checker/#p=-%E2%88%83x%28Px+%E2%88%A7+Qx%29%2C+Pa%2C+Qb&c=-a%3Db&pr=-%E2%88%83x%28Px+%E2%88%A7+Qx%29++P%0APa++P%0AQb++P">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/proof-checker/#p=-%E2%88%83x%28Px+%E2%88%A7+Qx%29%2C+Pa%2C+Qb&c=-a%3Db&pr=-%E2%88%83x%28Px+%E2%88%A7+Qx%29++P%0APa++P%0AQb++P" height="560" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+  <div class="exercise">
+    <div class="exercise-header">
+      <span class="exercise-num">15</span>
+      <a class="open-btn" target="_blank" href="https://gabriel-uzquiano.github.io/proof-checker/#p=%E2%88%83x+Px%2C+%E2%88%83x+Qx%2C+-%E2%88%83x%28Px+%E2%88%A7+Qx%29&c=%E2%88%83x+%E2%88%83y+-x%3Dy&pr=%E2%88%83x+Px++P%0A%E2%88%83x+Qx++P%0A-%E2%88%83x%28Px+%E2%88%A7+Qx%29++P">Open &nearr;</a>
+    </div>
+    <div class="app-frame">
+      <iframe src="https://gabriel-uzquiano.github.io/proof-checker/#p=%E2%88%83x+Px%2C+%E2%88%83x+Qx%2C+-%E2%88%83x%28Px+%E2%88%A7+Qx%29&c=%E2%88%83x+%E2%88%83y+-x%3Dy&pr=%E2%88%83x+Px++P%0A%E2%88%83x+Qx++P%0A-%E2%88%83x%28Px+%E2%88%A7+Qx%29++P" height="620" loading="lazy" allow="fullscreen"></iframe>
+    </div>
+  </div>
+<script>
+function checkMC(btn) {
+  const ex = btn.closest('.mc-exercise');
+  const correct = JSON.parse(ex.dataset.correct);
+  const inputs = ex.querySelectorAll('input');
+  const checked = [...inputs].map((el,i)=>el.checked?i:-1).filter(i=>i>=0);
+  const ok = correct.length===checked.length && correct.every(i=>checked.includes(i));
+  const fb = ex.querySelector('.mc-feedback');
+  fb.hidden = false;
+  fb.className = 'mc-feedback ' + (ok ? 'fb-ok' : 'fb-err');
+  fb.textContent = ok ? '✓ Correct.' : '✗ Not quite — try again.';
+}
+function revealMC(btn) {
+  btn.closest('.mc-exercise').querySelector('.mc-answer').hidden = false;
+}
+</script>
+</body>
+</html>

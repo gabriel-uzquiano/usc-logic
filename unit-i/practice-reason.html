@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USC Logic Web — Unit I: Reason and Argument</title>
+  <link rel="stylesheet" href="../shared/style.css">
+  <style>
+    .exercise-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.4rem; }
+    .exercise-num { font-family: var(--font-sans); font-size: 0.83rem; color: var(--color-muted); }
+    .open-btn { font-family: var(--font-sans); font-size: 0.75rem; color: var(--color-teal); text-decoration: none; }
+    .open-btn:hover { text-decoration: underline; }
+    .app-frame iframe { width: 100%; border: 1px solid var(--color-border); border-radius: 4px; display: block; background: #fff; }
+    .exercise { margin: 0 0 2.25rem; }
+    blockquote { border-left: 3px solid var(--color-border); margin: 0.5rem 0 1rem 0; padding: 0.3rem 1rem; font-family: var(--font-sans); color: var(--color-muted); }
+    .mc-exercise { margin: 0 0 2rem; }
+    .mc-question { margin-bottom: 0.6rem; }
+    .mc-options { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 0.7rem; }
+    .mc-option { display: flex; align-items: baseline; gap: 0.5rem; cursor: pointer; font-family: var(--font-sans); font-size: 0.9rem; }
+    .mc-option input { margin: 0; flex-shrink: 0; }
+    .mc-controls { display: flex; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .btn-check, .btn-reveal {
+      font-family: var(--font-sans); font-size: 0.78rem; padding: 0.25rem 0.75rem;
+      border-radius: 4px; cursor: pointer; border: 1px solid var(--color-border);
+      background: var(--color-bg); color: var(--color-text);
+    }
+    .btn-check:hover { background: var(--color-teal); color: #fff; border-color: var(--color-teal); }
+    .mc-feedback { font-family: var(--font-sans); font-size: 0.85rem; margin-bottom: 0.4rem; }
+    .fb-ok { color: #1a6e2e; } .fb-err { color: #8b1a1a; }
+    .mc-answer { font-family: var(--font-sans); font-size: 0.85rem; color: var(--color-muted); margin-top: 0.3rem; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="course-label">University of Southern California · Philosophy</div>
+    <h1>USC Logic Web</h1>
+  </header>
+  <nav class="breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>&rsaquo;</span>
+    Unit I
+    <span>&rsaquo;</span>
+    Reason and Argument
+  </nav>
+  <p>Exercises on identifying conclusions, argument forms, validity, and soundness.</p>
+
+  <h2>Arguments</h2>
+  <p>Identify the conclusion of each argument.</p>
+
+  <div class="exercise mc-exercise" data-correct='[0]' data-name="q1_1">
+    <div class="exercise-header"><span class="exercise-num">1.1</span></div>
+    <div class="mc-question">The gardener did it. Only the gardener had access to the crime scene. Moreover, the crime scene is littered with the gardener&rsquo;s prints.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q1_1_0" value="0"><span>The gardener did it.</span></label>
+      <label class="mc-option"><input type="radio" name="q1_1_1" value="1"><span>Only the gardener had access to the crime scene.</span></label>
+      <label class="mc-option"><input type="radio" name="q1_1_2" value="2"><span>The scene is littered with the gardener&rsquo;s prints.</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> The gardener did it.</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q1_2">
+    <div class="exercise-header"><span class="exercise-num">1.2</span></div>
+    <div class="mc-question">If you had sent me an email, I would have read it. So, you did not send me one. For if I had read it, we would not find ourselves in this situation.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q1_2_0" value="0"><span>If you had sent me an email, I would have read it.</span></label>
+      <label class="mc-option"><input type="radio" name="q1_2_1" value="1"><span>You did not send me an email.</span></label>
+      <label class="mc-option"><input type="radio" name="q1_2_2" value="2"><span>If I had read your email, we would not find ourselves in this situation.</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> You did not send me an email.</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[2]' data-name="q1_3">
+    <div class="exercise-header"><span class="exercise-num">1.3</span></div>
+    <div class="mc-question">If I put sugar in my coffee, it will taste fine. But if I put motor oil, it will not taste fine. So, if I put motor oil, I will not put sugar in it.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q1_3_0" value="0"><span>If I put sugar in my coffee, it will taste fine.</span></label>
+      <label class="mc-option"><input type="radio" name="q1_3_1" value="1"><span>If I put motor oil, it will not taste fine.</span></label>
+      <label class="mc-option"><input type="radio" name="q1_3_2" value="2"><span>If I put motor oil, I will not put sugar in it.</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> If I put motor oil, I will not put sugar in it.</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[0]' data-name="q1_4">
+    <div class="exercise-header"><span class="exercise-num">1.4</span></div>
+    <div class="mc-question">The statue is not the same thing as the clay. For the statue only came into being this morning when we molded the clay into one. However, the clay existed before this morning.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q1_4_0" value="0"><span>The statue is not the same thing as the clay.</span></label>
+      <label class="mc-option"><input type="radio" name="q1_4_1" value="1"><span>The statue only came into being this morning.</span></label>
+      <label class="mc-option"><input type="radio" name="q1_4_2" value="2"><span>The clay existed even before this morning.</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> The statue is not the same thing as the clay.</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[2]' data-name="q1_5">
+    <div class="exercise-header"><span class="exercise-num">1.5</span></div>
+    <div class="mc-question">If the animal in the pen is a zebra, then it is not a cleverly painted mule. But if it is a cleverly painted mule, then a prank is being pulled on us. So, the animal in the pen is not a zebra. For a prank is being pulled on us.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q1_5_0" value="0"><span>If the animal is a zebra, it is not a mule.</span></label>
+      <label class="mc-option"><input type="radio" name="q1_5_1" value="1"><span>If it is a mule, a prank is being pulled on us.</span></label>
+      <label class="mc-option"><input type="radio" name="q1_5_2" value="2"><span>The animal in the pen is not a zebra.</span></label>
+      <label class="mc-option"><input type="radio" name="q1_5_3" value="3"><span>A prank is being pulled on us.</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> The animal in the pen is not a zebra.</div>
+  </div>
+  <h2>Argument Form</h2>
+  <p>Which of the arguments <em>both</em> exemplify the specified form <em>and</em> have true premises and a false conclusion?</p>
+  <blockquote>If <i>p</i>, then <i>q</i>. <i>q</i>. Therefore, <i>p</i>.</blockquote>
+
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_1">
+    <div class="exercise-header"><span class="exercise-num">2.1</span></div>
+    <div class="mc-question">If today is Tuesday, then tomorrow is Wednesday. Today is Tuesday. Therefore, tomorrow is Wednesday.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_1_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_1_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[0]' data-name="q2_2">
+    <div class="exercise-header"><span class="exercise-num">2.2</span></div>
+    <div class="mc-question">If I win the lottery, then I will feel great. I will feel great. Therefore, I will win the lottery.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_2_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_2_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> Yes</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_3">
+    <div class="exercise-header"><span class="exercise-num">2.3</span></div>
+    <div class="mc-question">If LA is in California, then it is closer to San Diego than to New York. LA is closer to San Diego than to New York. Therefore, LA is in California.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_3_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_3_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
+  </div>  <blockquote><i>p</i> or <i>q</i>. If <i>q</i>, then <i>r</i>. Therefore, <i>r</i>.</blockquote>
+
+  <div class="exercise mc-exercise" data-correct='[0]' data-name="q2_4">
+    <div class="exercise-header"><span class="exercise-num">2.4</span></div>
+    <div class="mc-question">LA is in the west coast or LA is in the east coast. If LA is in the east coast, then it is close to New York. Therefore, LA is close to New York.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_4_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_4_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> Yes</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_5">
+    <div class="exercise-header"><span class="exercise-num">2.5</span></div>
+    <div class="mc-question">Lisa is at home or Lisa is at work. If she is at home, she will be back in a minute. So, she will be back in a minute.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_5_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_5_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_6">
+    <div class="exercise-header"><span class="exercise-num">2.6</span></div>
+    <div class="mc-question">The substance will turn brown or it will turn green. Therefore, the substance will turn green.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_6_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_6_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
+  </div>  <blockquote><i>p</i> if, and only if, <i>q</i>. <i>p</i>. Therefore, not <i>q</i>.</blockquote>
+
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_7">
+    <div class="exercise-header"><span class="exercise-num">2.7</span></div>
+    <div class="mc-question">The laptop will start if, and only if, it is fully charged. The laptop will start. Therefore, the laptop is fully charged.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_7_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_7_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[0]' data-name="q2_8">
+    <div class="exercise-header"><span class="exercise-num">2.8</span></div>
+    <div class="mc-question">Mark Twain wrote <em>Huckleberry Finn</em> if, and only if, Samuel Clemens did. Mark Twain wrote <em>Huckleberry Finn</em>. Therefore, Samuel Clemens did not write <em>Huckleberry Finn</em>.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_8_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_8_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> Yes</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_9">
+    <div class="exercise-header"><span class="exercise-num">2.9</span></div>
+    <div class="mc-question">LA is north of San Francisco if, and only if, LA is south of San Diego. LA is north of San Francisco. Therefore, LA is not south of San Diego.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_9_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_9_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
+  </div>  <blockquote><i>p</i> unless <i>q</i>. <i>q</i>. Therefore, <i>p</i>.</blockquote>
+
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_10">
+    <div class="exercise-header"><span class="exercise-num">2.10</span></div>
+    <div class="mc-question">The tank will be empty unless you filled it. You did not fill the tank. Therefore, the tank will be empty.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_10_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_10_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_11">
+    <div class="exercise-header"><span class="exercise-num">2.11</span></div>
+    <div class="mc-question">You will not win the lottery unless you play. You do not play the lottery. Therefore, you will not win the lottery.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_11_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_11_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
+  </div>  <blockquote><i>p</i> only if <i>q</i>. Not <i>p</i>. Therefore, not <i>q</i>.</blockquote>
+
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_13">
+    <div class="exercise-header"><span class="exercise-num">2.13</span></div>
+    <div class="mc-question">I will buy that car only if it is an Audi. I will not buy that car. Therefore, it is an Audi.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_13_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_13_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q2_14">
+    <div class="exercise-header"><span class="exercise-num">2.14</span></div>
+    <div class="mc-question">The square root of 2 is rational only if it is a fraction of two integers. The square root of 2 is not rational. Therefore, the square root of 2 is not a fraction of two integers.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_14_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_14_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> No</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[0]' data-name="q2_15">
+    <div class="exercise-header"><span class="exercise-num">2.15</span></div>
+    <div class="mc-question">USC is located in San Diego only if it is located in California. USC is not located in San Diego. Therefore, USC is not located in California.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q2_15_0" value="0"><span>Yes</span></label>
+      <label class="mc-option"><input type="radio" name="q2_15_1" value="1"><span>No</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> Yes</div>
+  </div>
+  <h2>Validity</h2>
+  <p>Determine whether each argument is valid.</p>
+
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q3_1">
+    <div class="exercise-header"><span class="exercise-num">3.1</span></div>
+    <div class="mc-question">Whales live underwater. Few mammals live underwater. Therefore, whales are not mammals.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q3_1_0" value="0"><span>Valid</span></label>
+      <label class="mc-option"><input type="radio" name="q3_1_1" value="1"><span>Invalid</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> Invalid</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[0]' data-name="q3_2">
+    <div class="exercise-header"><span class="exercise-num">3.2</span></div>
+    <div class="mc-question">If today is Monday, then tomorrow is Tuesday. Tomorrow is not Tuesday. Therefore, today is not Monday.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q3_2_0" value="0"><span>Valid</span></label>
+      <label class="mc-option"><input type="radio" name="q3_2_1" value="1"><span>Invalid</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> Valid</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[0]' data-name="q3_3">
+    <div class="exercise-header"><span class="exercise-num">3.3</span></div>
+    <div class="mc-question">It will either rain today or tomorrow. It will not rain today. So, it will rain tomorrow.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q3_3_0" value="0"><span>Valid</span></label>
+      <label class="mc-option"><input type="radio" name="q3_3_1" value="1"><span>Invalid</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> Valid</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[1]' data-name="q3_4">
+    <div class="exercise-header"><span class="exercise-num">3.4</span></div>
+    <div class="mc-question">The car will not start unless you turn the ignition. There is no gas in the tank. Therefore, the car will not start.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q3_4_0" value="0"><span>Valid</span></label>
+      <label class="mc-option"><input type="radio" name="q3_4_1" value="1"><span>Invalid</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> Invalid</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[0]' data-name="q3_5">
+    <div class="exercise-header"><span class="exercise-num">3.5</span></div>
+    <div class="mc-question">Every number has a successor. 17 is a number. Therefore, 17 has a successor.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="radio" name="q3_5_0" value="0"><span>Valid</span></label>
+      <label class="mc-option"><input type="radio" name="q3_5_1" value="1"><span>Invalid</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> Valid</div>
+  </div>
+  <h2>Soundness</h2>
+  <p>Which of the following statements are true? Select all that apply.</p>
+
+  <div class="exercise mc-exercise" data-correct='[1, 2]' data-name="q4_1">
+    <div class="exercise-header"><span class="exercise-num">4.1</span></div>
+    <div class="mc-question">Select all true statements.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="checkbox" name="q4_1_0" value="0"><span>An argument may have more than one conclusion.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_1_1" value="1"><span>Arguments are made of declarative sentences.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_1_2" value="2"><span>An argument may have more than one premise.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_1_3" value="3"><span>Some arguments are neither valid nor invalid.</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> Arguments are made of declarative sentences.; An argument may have more than one premise.</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[2]' data-name="q4_2">
+    <div class="exercise-header"><span class="exercise-num">4.2</span></div>
+    <div class="mc-question">Select all true statements.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="checkbox" name="q4_2_0" value="0"><span>Valid arguments have false conclusions.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_2_1" value="1"><span>Valid arguments have true conclusions.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_2_2" value="2"><span>A valid argument may have a true or a false conclusion.</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> A valid argument may have a true or a false conclusion.</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[2, 3]' data-name="q4_3">
+    <div class="exercise-header"><span class="exercise-num">4.3</span></div>
+    <div class="mc-question">Select all true statements.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="checkbox" name="q4_3_0" value="0"><span>Invalid arguments have false conclusions.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_3_1" value="1"><span>Invalid arguments with true premises have a false conclusion.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_3_2" value="2"><span>A valid argument may have true premises and a true conclusion.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_3_3" value="3"><span>Valid arguments with a false conclusion have at least one false premise.</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> A valid argument may have true premises and a true conclusion.; Valid arguments with a false conclusion have at least one false premise.</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[0, 1]' data-name="q4_4">
+    <div class="exercise-header"><span class="exercise-num">4.4</span></div>
+    <div class="mc-question">Select all true statements.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="checkbox" name="q4_4_0" value="0"><span>Sound arguments have true conclusions.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_4_1" value="1"><span>Sound arguments have true premises.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_4_2" value="2"><span>Unsound arguments have false premises.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_4_3" value="3"><span>Unsound arguments have a false conclusion.</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> Sound arguments have true conclusions.; Sound arguments have true premises.</div>
+  </div>
+  <div class="exercise mc-exercise" data-correct='[1, 3]' data-name="q4_5">
+    <div class="exercise-header"><span class="exercise-num">4.5</span></div>
+    <div class="mc-question">Select all true statements.</div>
+    <div class="mc-options">
+      <label class="mc-option"><input type="checkbox" name="q4_5_0" value="0"><span>A valid argument may have true premises and a false conclusion.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_5_1" value="1"><span>A valid argument may have false premises and a false conclusion.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_5_2" value="2"><span>A sound argument may have true premises and a false conclusion.</span></label>
+      <label class="mc-option"><input type="checkbox" name="q4_5_3" value="3"><span>A sound argument may have true premises and a true conclusion.</span></label>
+    </div>
+    <div class="mc-controls">
+      <button class="btn-check" onclick="checkMC(this)">Check</button>
+      <button class="btn-reveal" onclick="revealMC(this)">Show answer</button>
+    </div>
+    <div class="mc-feedback" hidden></div>
+    <div class="mc-answer" hidden><strong>Answer:</strong> A valid argument may have false premises and a false conclusion.; A sound argument may have true premises and a true conclusion.</div>
+  </div>
+<script>
+function checkMC(btn) {
+  const ex = btn.closest('.mc-exercise');
+  const correct = JSON.parse(ex.dataset.correct);
+  const inputs = ex.querySelectorAll('input');
+  const checked = [...inputs].map((el,i)=>el.checked?i:-1).filter(i=>i>=0);
+  const ok = correct.length===checked.length && correct.every(i=>checked.includes(i));
+  const fb = ex.querySelector('.mc-feedback');
+  fb.hidden = false;
+  fb.className = 'mc-feedback ' + (ok ? 'fb-ok' : 'fb-err');
+  fb.textContent = ok ? '✓ Correct.' : '✗ Not quite — try again.';
+}
+function revealMC(btn) {
+  btn.closest('.mc-exercise').querySelector('.mc-answer').hidden = false;
+}
+</script>
+</body>
+</html>
